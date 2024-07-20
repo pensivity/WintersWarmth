@@ -203,6 +203,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 2642934604197363799, guid: 4fb4c2d0fbc7f574fb80ca72ede98f52, type: 3}
+      propertyPath: player
+      value: 
+      objectReference: {fileID: 719302638}
     - target: {fileID: 8420254228295903896, guid: 4fb4c2d0fbc7f574fb80ca72ede98f52, type: 3}
       propertyPath: m_Name
       value: GameManager
@@ -260,6 +264,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 2728673595174376874, guid: 1c07b9d5a7dd44812804ad2a52789c75, type: 3}
   m_PrefabInstance: {fileID: 6236562536118529031}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &719302637 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3903544326474221960, guid: 1c07b9d5a7dd44812804ad2a52789c75, type: 3}
+  m_PrefabInstance: {fileID: 6236562536118529031}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719302634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 28c5df9ac7dd146b080415a75caeae2f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &719302638 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5737588830324078019, guid: 1c07b9d5a7dd44812804ad2a52789c75, type: 3}
@@ -292,6 +307,62 @@ Rigidbody2D:
   m_SleepingMode: 1
   m_CollisionDetection: 0
   m_Constraints: 4
+--- !u!114 &719302643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719302634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675e27609938f455c90d5f91718d7b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 815f3540becb046e0bd6ce08550db922, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 719302637}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: CoolingDown
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!114 &719302644
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 719302634}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675e27609938f455c90d5f91718d7b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 8145d21eb78f94c4aaf24b4f33c195c5, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 719302637}
+        m_TargetAssemblyTypeName: PlayerController, Assembly-CSharp
+        m_MethodName: WarmingUp
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &804193117 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4107220066430803623, guid: 4fb4c2d0fbc7f574fb80ca72ede98f52, type: 3}
@@ -464,6 +535,12 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 2728673595174376874, guid: 1c07b9d5a7dd44812804ad2a52789c75, type: 3}
       insertIndex: -1
       addedObject: {fileID: 719302639}
+    - targetCorrespondingSourceObject: {fileID: 2728673595174376874, guid: 1c07b9d5a7dd44812804ad2a52789c75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719302644}
+    - targetCorrespondingSourceObject: {fileID: 2728673595174376874, guid: 1c07b9d5a7dd44812804ad2a52789c75, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 719302643}
   m_SourcePrefab: {fileID: 100100000, guid: 1c07b9d5a7dd44812804ad2a52789c75, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:

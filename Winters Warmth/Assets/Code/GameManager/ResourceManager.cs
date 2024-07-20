@@ -30,6 +30,7 @@ public class ResourceManager : MonoBehaviour
         {
             isCooling = true;
             houseWarmth--;
+            // Add sound effects here!
             yield return new WaitForSeconds(3);
             isCooling = false;
             yield return null;
