@@ -32,7 +32,6 @@ public class DayNightCycle : MonoBehaviour
             Debug.LogError("Character transform not set in DayNightCycle script!");
         }
 
-        // Raise initial day/night event based on start time
         CheckAndRaiseDayNightEvent();
     }
 
@@ -56,7 +55,6 @@ public class DayNightCycle : MonoBehaviour
             transform.position = player.position + offsetFromCharacter;
         }
 
-        // Check if we've crossed the day/night threshold
         if (CrossedDayNightThreshold(previousTime, timeOfDay))
         {
             CheckAndRaiseDayNightEvent();
@@ -65,7 +63,6 @@ public class DayNightCycle : MonoBehaviour
 
     private bool CrossedDayNightThreshold(float previousTime, float currentTime)
     {
-        // Define day as 6:00 AM to 6:00 PM (0.25 to 0.75 in normalized time)
         const float dayStart = 0.25f;
         const float dayEnd = 0.75f;
 
@@ -77,7 +74,6 @@ public class DayNightCycle : MonoBehaviour
 
     private void CheckAndRaiseDayNightEvent()
     {
-        // Define day as 6:00 AM to 6:00 PM (0.25 to 0.75 in normalized time)
         const float dayStart = 0.25f;
         const float dayEnd = 0.75f;
 

@@ -110,6 +110,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6311309669281480055}
   - component: {fileID: 1066365236722094668}
+  - component: {fileID: 784654924953134747}
   m_Layer: 0
   m_Name: ResourceManager
   m_TagString: Untagged
@@ -144,6 +145,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ad4bb7652401e84a962dacc552bebc1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  houseWarmth: 0
+--- !u!114 &784654924953134747
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4107220066430803623}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 675e27609938f455c90d5f91718d7b1e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameEvent: {fileID: 11400000, guid: 8145d21eb78f94c4aaf24b4f33c195c5, type: 2}
+  response:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 1066365236722094668}
+        m_TargetAssemblyTypeName: ResourceManager, Assembly-CSharp
+        m_MethodName: AddFuel
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &4333578348054989624
 GameObject:
   m_ObjectHideFlags: 0
