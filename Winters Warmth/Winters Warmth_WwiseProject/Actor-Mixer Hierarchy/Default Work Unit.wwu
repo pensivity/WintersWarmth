@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}" SchemaVersion="119">
+	<AudioObjects>
+		<WorkUnit Name="Default Work Unit" ID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}" PersistMode="Standalone">
+			<ChildrenList>
+				<Sound Name="Cheese" ID="{252D22CE-0643-43AE-9667-30C5DE367B95}" ShortID="578649791">
+					<PropertyList>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>-22</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="Cheese" ID="{EB6079C8-6B52-4EF7-953B-835693AF4C23}">
+							<Language>SFX</Language>
+							<AudioFile>Cheese.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="755690297"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="Cheese" ID="{EB6079C8-6B52-4EF7-953B-835693AF4C23}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
+			</ChildrenList>
+		</WorkUnit>
+	</AudioObjects>
+</WwiseDocument>

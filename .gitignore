@@ -82,3 +82,14 @@ crashlytics-build.properties
 /Assets/Temp
 Winters Warmth/Logs/
 Winters Warmth/Temp/
+
+# Wwise
+.backup*
+.cache*
+*.akd
+*.prof
+*.validationcache
+*.wsettings
+IncrementalSoundBankData.xml
+Winters Warmth/Assets/Wwise/API/Runtime/Plugins/Mac/
+Winters Warmth/Assets/Wwise/API/Runtime/Plugins/Windows/
