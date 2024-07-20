@@ -2,15 +2,13 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
+    [SerializeField] public float speed;
+
+
+    private void Awake()
     {
-        
+        speed = 5f;
     }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
+
 }
