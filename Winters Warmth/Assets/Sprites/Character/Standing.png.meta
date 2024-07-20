@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 64c0ff554e1b05543b3bccb0fe719811
+guid: c110799ab085b4704836c51e9bd05088
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -7172226001116280355
-    second: character_still_0
+      213: -1100630957127726708
+    second: Untitled3419_20240720163519_0
+  - first:
+      213: -3819934030007072510
+    second: Untitled3419_20240720163519_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 188
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -72,19 +75,6 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    ignorePlatformSupport: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 4
-    buildTarget: Win64
     maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
@@ -126,12 +116,12 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: character_still_0
+      name: Untitled3419_20240720163519_0
       rect:
         serializedVersion: 2
         x: 86
         y: 69
-        width: 153
+        width: 159
         height: 479
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -141,8 +131,30 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: dd9c4aab372277c90800000000000000
-      internalID: -7172226001116280355
+      spriteID: c898a93d9f5c9b0f0800000000000000
+      internalID: -1100630957127726708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Untitled3419_20240720163519_1
+      rect:
+        serializedVersion: 2
+        x: 349
+        y: 112
+        width: 146
+        height: 442
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20980041d3edcfac0800000000000000
+      internalID: -3819934030007072510
       vertices: []
       indices: 
       edges: []
@@ -160,7 +172,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Untitled3419_20240720163519_0: -1100630957127726708
+      Untitled3419_20240720163519_1: -3819934030007072510
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

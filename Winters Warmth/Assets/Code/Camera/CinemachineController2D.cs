@@ -54,7 +54,6 @@ public class CinemachineController2D : MonoBehaviour
 
     public void ZoomOutEvent(Component sender, object data)
     {
-        Debug.Log("Zooming out");
         ZoomOut(zoomOut);
     }
 }
