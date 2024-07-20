@@ -323,6 +323,8 @@ GameObject:
   - component: {fileID: 6967540261768810928}
   - component: {fileID: 896849423881278862}
   - component: {fileID: 5322185700688893204}
+  - component: {fileID: 5320810216423679782}
+  - component: {fileID: 5747512003460261308}
   m_Layer: 0
   m_Name: House
   m_TagString: Untagged
@@ -443,6 +445,33 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0, y: 0}
   m_Radius: 1
+--- !u!114 &5320810216423679782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3395424167047935971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ad4bb7652401e84a962dacc552bebc1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &5747512003460261308
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3395424167047935971}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8d040dce36f43ee86a37fb53316ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomIn: {fileID: 11400000, guid: 8145d21eb78f94c4aaf24b4f33c195c5, type: 2}
+  zoomOut: {fileID: 11400000, guid: 815f3540becb046e0bd6ce08550db922, type: 2}
+  isZoomInTrigger: 1
 --- !u!1 &5672418373973036331
 GameObject:
   m_ObjectHideFlags: 0

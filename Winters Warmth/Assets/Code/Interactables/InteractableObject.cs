@@ -9,15 +9,17 @@ public class Interactable : MonoBehaviour
     public float appearanceHeight = 0.5f;
     public float animationDuration = 0.5f;
 
-    private Transform player;
+    [SerializeField] private Transform player;
+    [SerializeField] private PlayerController playerController;
     private bool canInteract = false;
     private GameObject instantiatedPrompt;
     private Coroutine shakeCoroutine;
     private Vector3 promptStartPosition;
 
-    void Start()
+    void Awake()
     {
         player = GameObject.FindGameObjectWithTag("Player").transform;
+        playerController = GameObject.Find("PlayerController").GetComponent<PlayerController>();
     }
 
     void Update()
@@ -64,8 +66,29 @@ public class Interactable : MonoBehaviour
 
     void Interact()
     {
-        Debug.Log("Interacting with " + gameObject.name);
-        // TODO: Implement interaction logic
+        switch(gameObject.tag)
+        {
+            case "Fuel":
+                if (playerController.carryCapacity < playerController.maxCapacity)
+                {
+                    // add to the player's carried fuel
+                    playerController.carryCapacity++;
+
+                    // destroy this object
+                    SafeDestroyPrompt();
+                    Destroy(gameObject);
+                } else
+                {
+                    Debug.Log("Carrying too much!");
+                    // TODO: Implement UI popup
+                }
+                
+                break;
+
+            default:
+                Debug.Log("Interacting with " + gameObject.name);
+                break;
+        }
     }
 
     IEnumerator StartAnimation(Transform objectToAnimate)
