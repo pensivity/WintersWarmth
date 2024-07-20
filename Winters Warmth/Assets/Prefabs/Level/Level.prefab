@@ -106,8 +106,8 @@ SpriteRenderer:
   m_AutoUVMaxDistance: 0.5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
-  m_SortingLayerID: 0
-  m_SortingLayer: 0
+  m_SortingLayerID: 723696579
+  m_SortingLayer: -1
   m_SortingOrder: 0
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
   m_Color: {r: 0.4490565, g: 0.36178163, b: 0.31433955, a: 1}
@@ -128,6 +128,14 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2925368266460387205}
     m_Modifications:
+    - target: {fileID: 896849423881278862, guid: 6fe22cb0e6a2ec94eb252ca014d5470b, type: 3}
+      propertyPath: m_Size.x
+      value: 1.359375
+      objectReference: {fileID: 0}
+    - target: {fileID: 896849423881278862, guid: 6fe22cb0e6a2ec94eb252ca014d5470b, type: 3}
+      propertyPath: m_Size.y
+      value: 0.99609375
+      objectReference: {fileID: 0}
     - target: {fileID: 3395424167047935971, guid: 6fe22cb0e6a2ec94eb252ca014d5470b, type: 3}
       propertyPath: m_Name
       value: House
@@ -175,10 +183,33 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 3395424167047935971, guid: 6fe22cb0e6a2ec94eb252ca014d5470b, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2346862371506227910}
   m_SourcePrefab: {fileID: 100100000, guid: 6fe22cb0e6a2ec94eb252ca014d5470b, type: 3}
 --- !u!4 &3462327342320292208 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 6967540261768810928, guid: 6fe22cb0e6a2ec94eb252ca014d5470b, type: 3}
   m_PrefabInstance: {fileID: 5817811432358133952}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &9197472929754052387 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3395424167047935971, guid: 6fe22cb0e6a2ec94eb252ca014d5470b, type: 3}
+  m_PrefabInstance: {fileID: 5817811432358133952}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2346862371506227910
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9197472929754052387}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3c8d040dce36f43ee86a37fb53316ef2, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  zoomIn: {fileID: 11400000, guid: 8145d21eb78f94c4aaf24b4f33c195c5, type: 2}
+  zoomOut: {fileID: 11400000, guid: 815f3540becb046e0bd6ce08550db922, type: 2}
+  isZoomInTrigger: 1
