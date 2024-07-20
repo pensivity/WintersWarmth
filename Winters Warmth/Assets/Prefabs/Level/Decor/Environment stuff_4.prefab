@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 3554913988753929249}
   - component: {fileID: 8989365300829040118}
   - component: {fileID: -6756479189282521238}
+  - component: {fileID: 8535769139992005989}
   m_Layer: 0
   m_Name: Environment stuff_4
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 3160429916321474433, guid: 9d6ba23687e33464f9514bbea55dcdd2, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!70 &-6756479189282521238
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -125,3 +126,15 @@ CapsuleCollider2D:
   m_Offset: {x: -0.07836248, y: -0.023036472}
   m_Size: {x: 1.1298095, y: 0.47629339}
   m_Direction: 1
+--- !u!114 &8535769139992005989
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7838036723028726258}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 117234617cbc90642bec1955af4972f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

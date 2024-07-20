@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 8066864796224002277}
   - component: {fileID: 7702007933768297734}
   - component: {fileID: 7150841665156072909}
+  - component: {fileID: -3437849759862210252}
   m_Layer: 0
   m_Name: Bed
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 2915058cc6cc7b94ab7ae15142a80089, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!60 &7150841665156072909
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -147,3 +148,15 @@ PolygonCollider2D:
       - {x: 0.7708334, y: -0.020833334}
       - {x: 1.0416667, y: 0.16666667}
   m_UseDelaunayMesh: 0
+--- !u!114 &-3437849759862210252
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6705342032949773446}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 117234617cbc90642bec1955af4972f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

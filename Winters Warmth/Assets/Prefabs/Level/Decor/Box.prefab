@@ -11,6 +11,7 @@ GameObject:
   - component: {fileID: 4157686709650152552}
   - component: {fileID: 954357441059699019}
   - component: {fileID: 3548731252594853017}
+  - component: {fileID: -6315618660379911346}
   m_Layer: 0
   m_Name: Box
   m_TagString: Untagged
@@ -76,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: aeb9ba901c5fe884caec85a23eb867ce, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -87,7 +88,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!60 &3548731252594853017
 PolygonCollider2D:
   m_ObjectHideFlags: 0
@@ -125,7 +126,7 @@ PolygonCollider2D:
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.6844532, y: 0.26723757}
     oldSize: {x: 1.4285715, y: 1.7142857}
     newSize: {x: 1.4285715, y: 1.7142857}
     adaptiveTilingThreshold: 0.5
@@ -144,3 +145,15 @@ PolygonCollider2D:
       - {x: 0.5357143, y: 0.23214287}
       - {x: 0.25, y: 0.6607143}
   m_UseDelaunayMesh: 0
+--- !u!114 &-6315618660379911346
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4251891317352437419}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 117234617cbc90642bec1955af4972f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

@@ -28,11 +28,12 @@ public class PlayerController : MonoBehaviour
         if (isOutside)
         {
             StartCoroutine(DecreasePlayerWarmth());
-        } else
+        }
+        else
         {
             StartCoroutine(IncreasePlayerWarmth());
         }
-        
+
     }
 
     IEnumerator DecreasePlayerWarmth()

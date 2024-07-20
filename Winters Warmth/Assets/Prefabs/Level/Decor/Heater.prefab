@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 6664518250812419328}
   - component: {fileID: 3914528304795707249}
   - component: {fileID: -4849064615829081137}
+  - component: {fileID: 5838664307620917399}
   m_Layer: 0
   m_Name: Heater
   m_TagString: Untagged
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 1
+  m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 92573fc4e1eeb5d4f8c172f292368839, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -89,7 +90,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!114 &3914528304795707249
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -165,6 +166,18 @@ PolygonCollider2D:
       - {x: 0.37500003, y: 0.08928572}
       - {x: 0.37500003, y: 1.0535715}
   m_UseDelaunayMesh: 0
+--- !u!114 &5838664307620917399
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4029143868829044115}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 117234617cbc90642bec1955af4972f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &5226816101306525519
 GameObject:
   m_ObjectHideFlags: 0
