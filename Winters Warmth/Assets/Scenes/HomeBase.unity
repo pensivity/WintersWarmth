@@ -347,6 +347,18 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 6013710103421024081, guid: 4fb4c2d0fbc7f574fb80ca72ede98f52, type: 3}
+      propertyPath: conversations.Array.data[0].lines.Array.data[0].rightCharacterSprite
+      value: 
+      objectReference: {fileID: 2596552556267567030, guid: 221434c411b0b426d88ed34b61a59fcc, type: 3}
+    - target: {fileID: 6013710103421024081, guid: 4fb4c2d0fbc7f574fb80ca72ede98f52, type: 3}
+      propertyPath: conversations.Array.data[0].lines.Array.data[1].rightCharacterSprite
+      value: 
+      objectReference: {fileID: 2596552556267567030, guid: 221434c411b0b426d88ed34b61a59fcc, type: 3}
+    - target: {fileID: 7108689357313655547, guid: 4fb4c2d0fbc7f574fb80ca72ede98f52, type: 3}
+      propertyPath: initialConversationID
+      value: MeetNPC
+      objectReference: {fileID: 0}
     - target: {fileID: 8420254228295903896, guid: 4fb4c2d0fbc7f574fb80ca72ede98f52, type: 3}
       propertyPath: m_Name
       value: GameManager

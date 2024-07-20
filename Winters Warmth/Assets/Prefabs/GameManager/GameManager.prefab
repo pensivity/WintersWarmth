@@ -176,6 +176,64 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ec04f04ab4a6684d8e4965122c55f5b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &7173212183199461716
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 8502033629487701716}
+  - component: {fileID: 6013710103421024081}
+  m_Layer: 0
+  m_Name: ConversationSystemManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &8502033629487701716
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173212183199461716}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 8614877873171680033}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6013710103421024081
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7173212183199461716}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 457d728d7998445bea148dd7870792f1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  conversationUIPrefab: {fileID: 3053878719837882646, guid: b27ca22a78cb64ad69a54c8fb9d3543f, type: 3}
+  conversations:
+  - conversationID: MeetNPC
+    lines:
+    - text: 'I like subway! '
+      leftCharacterSprite: {fileID: 1208040086343421634, guid: c2319ed5403a341ec871861d6d47ae12, type: 3}
+      rightCharacterSprite: {fileID: 3888885927669863452, guid: c2319ed5403a341ec871861d6d47ae12, type: 3}
+      isLeftCharacterSpeaking: 0
+      flipLeftCharacter: 0
+    - text: 'Me too! '
+      leftCharacterSprite: {fileID: 1208040086343421634, guid: c2319ed5403a341ec871861d6d47ae12, type: 3}
+      rightCharacterSprite: {fileID: 3888885927669863452, guid: c2319ed5403a341ec871861d6d47ae12, type: 3}
+      isLeftCharacterSpeaking: 1
+      flipLeftCharacter: 0
 --- !u!1 &8420254228295903896
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,6 +243,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8614877873171680033}
+  - component: {fileID: 7108689357313655547}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -210,8 +269,22 @@ Transform:
   - {fileID: 567939113913335505}
   - {fileID: 8213964094679127109}
   - {fileID: 3235096581053731635}
+  - {fileID: 8502033629487701716}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7108689357313655547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8420254228295903896}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a8b3bbbb9bd004f8685535a4693fb938, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  initialConversationID: MeetNPC
 --- !u!1 &9146730760893701111
 GameObject:
   m_ObjectHideFlags: 0
