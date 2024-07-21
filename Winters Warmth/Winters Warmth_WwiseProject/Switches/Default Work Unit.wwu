@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{641DEA84-8DBC-4D6F-B14A-40487CB98712}" SchemaVersion="119">
+	<Switches>
+		<WorkUnit Name="Default Work Unit" ID="{641DEA84-8DBC-4D6F-B14A-40487CB98712}" PersistMode="Standalone">
+			<ChildrenList>
+				<SwitchGroup Name="Music_Switch_Group" ID="{79AE80B6-8236-4ACB-B02F-ECEE2C9A19B1}">
+					<PropertyList>
+						<Property Name="UseGameParameter" Type="bool" Value="True"/>
+					</PropertyList>
+					<ChildrenList>
+						<Switch Name="Outdoor_Intensity_A" ID="{430BE35D-9F68-424E-8778-2F209EB13B85}"/>
+						<Switch Name="Outdoor_Intensity_B" ID="{F561DBEE-38E9-4A9B-AA63-375BA2599AB0}"/>
+						<Switch Name="Outdoor_Intensity_C" ID="{F3D0BDFF-C74B-4C49-A23F-7D193AE6C760}"/>
+					</ChildrenList>
+					<SwitchOnRTPC>
+						<GameParameterRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}"/>
+						<Curve Name="" ID="{DFA3B996-526E-44CB-A7B7-7E93D0766BB9}">
+							<PropertyList>
+								<Property Name="Flags" Type="int32" Value="65537"/>
+							</PropertyList>
+							<PointList>
+								<Point>
+									<XPos>0</XPos>
+									<YPos>3</YPos>
+									<Flags>5</Flags>
+								</Point>
+								<Point>
+									<XPos>70</XPos>
+									<YPos>2</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>90</XPos>
+									<YPos>1</YPos>
+									<Flags>0</Flags>
+								</Point>
+								<Point>
+									<XPos>100</XPos>
+									<YPos>1</YPos>
+									<Flags>37</Flags>
+								</Point>
+							</PointList>
+						</Curve>
+					</SwitchOnRTPC>
+				</SwitchGroup>
+			</ChildrenList>
+		</WorkUnit>
+	</Switches>
+</WwiseDocument>

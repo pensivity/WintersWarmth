@@ -1,0 +1,601 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 069ed751a530f44ad89b2fdf0895e21a, type: 3}
+  m_Name: AkWwiseProjectData
+  m_EditorClassIdentifier: 
+  AcousticTextureWwu:
+  - PhysicalPath: Virtual Acoustics/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Virtual Acoustics
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 7dbc617653238d43ab81ae6e7c8f8a6f
+    ParentPath: Virtual Acoustics/Default Work Unit
+    guid: 7dbc617653238d43ab81ae6e7c8f8a6f
+    GuidInternal: 
+    m_lastTime: -8584800922515288700
+    List: []
+  AuxBusWwu:
+  - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Master-Mixer Hierarchy
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: cb4bad8846c10548ac3eadc0624c3496
+    ParentPath: Master-Mixer Hierarchy/Default Work Unit
+    guid: cb4bad8846c10548ac3eadc0624c3496
+    GuidInternal: 
+    m_lastTime: -8584800922515315852
+    List:
+    - name: Master Audio Bus
+      guid: d8a41415a61d2a41a17e75ca0c2149f3
+      id: 3803692087
+      PathAndIcons:
+      - ElementName: Master-Mixer Hierarchy
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: cb4bad8846c10548ac3eadc0624c3496
+      - ElementName: Master Audio Bus
+        ObjectType: 2
+        guid: d8a41415a61d2a41a17e75ca0c2149f3
+      Path: Master-Mixer Hierarchy/Default Work Unit/Master Audio Bus
+  BankWwu:
+  - PhysicalPath: SoundBanks/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: SoundBanks
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 9e3c3907e3559546a4fc825ab6c80394
+    ParentPath: SoundBanks/Default Work Unit
+    guid: 9e3c3907e3559546a4fc825ab6c80394
+    GuidInternal: 
+    m_lastTime: -8584800867454482792
+    List:
+    - name: Main_SoundBank
+      guid: a915179b3dd563489bbb8b20c9373537
+      id: 2228651116
+      PathAndIcons:
+      - ElementName: SoundBanks
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 9e3c3907e3559546a4fc825ab6c80394
+      - ElementName: Main_SoundBank
+        ObjectType: 7
+        guid: a915179b3dd563489bbb8b20c9373537
+      Path: SoundBanks/Default Work Unit/Main_SoundBank
+  EventWwu:
+  - PhysicalPath: Events/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Events
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 6c1c348f57078740a4e35767a9c7c3a8
+    ParentPath: Events/Default Work Unit
+    guid: 6c1c348f57078740a4e35767a9c7c3a8
+    GuidInternal: 
+    m_lastTime: -8584800805166709066
+    List:
+    - name: Indoors
+      guid: a1189696f7cf88459667e7d2643c781a
+      id: 4103860031
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Indoors
+        ObjectType: 4
+        guid: a1189696f7cf88459667e7d2643c781a
+      Path: Events/Default Work Unit/SX/Indoors
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Music
+      guid: 22f543129d6cbe4bb3b1afd91988bdbc
+      id: 3991942870
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: Music
+        ObjectType: 4
+        guid: 22f543129d6cbe4bb3b1afd91988bdbc
+      Path: Events/Default Work Unit/Music
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Outdoors
+      guid: 52e9c0f5246dc94ab6de2b45b0b3a3ea
+      id: 2730119150
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Outdoors
+        ObjectType: 4
+        guid: 52e9c0f5246dc94ab6de2b45b0b3a3ea
+      Path: Events/Default Work Unit/SX/Outdoors
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Cheese
+      guid: b9e3c879eca62f4db9b2a883122cf686
+      id: 2601295681
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: Play_Cheese
+        ObjectType: 3
+        guid: b9e3c879eca62f4db9b2a883122cf686
+      Path: Events/Default Work Unit/Play_Cheese
+      maxAttenuation: 0
+      maxDuration: 0.7188889
+      minDuration: 0.7188889
+    - name: Play_footsteps_indoor
+      guid: c4b3c15895c2c14c9893984e676962f9
+      id: 2885024351
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Indoors
+        ObjectType: 4
+        guid: a1189696f7cf88459667e7d2643c781a
+      - ElementName: Play_footsteps_indoor
+        ObjectType: 3
+        guid: c4b3c15895c2c14c9893984e676962f9
+      Path: Events/Default Work Unit/SX/Indoors/Play_footsteps_indoor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_footsteps_outdoor
+      guid: 408581ef244aa94183e1932e8d9f031b
+      id: 1267513578
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Outdoors
+        ObjectType: 4
+        guid: 52e9c0f5246dc94ab6de2b45b0b3a3ea
+      - ElementName: Play_footsteps_outdoor
+        ObjectType: 3
+        guid: 408581ef244aa94183e1932e8d9f031b
+      Path: Events/Default Work Unit/SX/Outdoors/Play_footsteps_outdoor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_generator_run_LP
+      guid: 6c99d8d99476514aa75229628f59dad7
+      id: 2602123658
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Indoors
+        ObjectType: 4
+        guid: a1189696f7cf88459667e7d2643c781a
+      - ElementName: Play_generator_run_LP
+        ObjectType: 3
+        guid: 6c99d8d99476514aa75229628f59dad7
+      Path: Events/Default Work Unit/SX/Indoors/Play_generator_run_LP
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_generator_start
+      guid: 7760b421b8f09a47b45ecfc4e85b19fb
+      id: 152489872
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Indoors
+        ObjectType: 4
+        guid: a1189696f7cf88459667e7d2643c781a
+      - ElementName: Play_generator_start
+        ObjectType: 3
+        guid: 7760b421b8f09a47b45ecfc4e85b19fb
+      Path: Events/Default Work Unit/SX/Indoors/Play_generator_start
+      maxAttenuation: 0
+      maxDuration: 4
+      minDuration: 4
+    - name: Play_generator_stop
+      guid: a389e92d3fdcd44380751b2a5e54009c
+      id: 1828218492
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Indoors
+        ObjectType: 4
+        guid: a1189696f7cf88459667e7d2643c781a
+      - ElementName: Play_generator_stop
+        ObjectType: 3
+        guid: a389e92d3fdcd44380751b2a5e54009c
+      Path: Events/Default Work Unit/SX/Indoors/Play_generator_stop
+      maxAttenuation: 0
+      maxDuration: 7.2278233
+      minDuration: 7.2278233
+    - name: Play_generator_under_load_LP
+      guid: cba3fdd9aa8a7248853461fcf867775f
+      id: 1665291020
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Indoors
+        ObjectType: 4
+        guid: a1189696f7cf88459667e7d2643c781a
+      - ElementName: Play_generator_under_load_LP
+        ObjectType: 3
+        guid: cba3fdd9aa8a7248853461fcf867775f
+      Path: Events/Default Work Unit/SX/Indoors/Play_generator_under_load_LP
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Play_Music_Switch_Container
+      guid: a809556f2292f648ab630e0c70af737e
+      id: 4282641482
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: Music
+        ObjectType: 4
+        guid: 22f543129d6cbe4bb3b1afd91988bdbc
+      - ElementName: Play_Music_Switch_Container
+        ObjectType: 3
+        guid: a809556f2292f648ab630e0c70af737e
+      Path: Events/Default Work Unit/Music/Play_Music_Switch_Container
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_footsteps_indoor
+      guid: ad14bf14235bef4f93e77c8a181e4e30
+      id: 3006568981
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Indoors
+        ObjectType: 4
+        guid: a1189696f7cf88459667e7d2643c781a
+      - ElementName: Stop_footsteps_indoor
+        ObjectType: 3
+        guid: ad14bf14235bef4f93e77c8a181e4e30
+      Path: Events/Default Work Unit/SX/Indoors/Stop_footsteps_indoor
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+    - name: Stop_footsteps_outdoor
+      guid: 198e54ff47ec1e4fa0230c6251208af5
+      id: 2871225740
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      - ElementName: Outdoors
+        ObjectType: 4
+        guid: 52e9c0f5246dc94ab6de2b45b0b3a3ea
+      - ElementName: Stop_footsteps_outdoor
+        ObjectType: 3
+        guid: 198e54ff47ec1e4fa0230c6251208af5
+      Path: Events/Default Work Unit/SX/Outdoors/Stop_footsteps_outdoor
+      maxAttenuation: 0
+      maxDuration: 0
+      minDuration: 0
+    - name: SX
+      guid: f0e17341040cf14cb100339a24dc1162
+      id: 1584861564
+      PathAndIcons:
+      - ElementName: Events
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 6c1c348f57078740a4e35767a9c7c3a8
+      - ElementName: SX
+        ObjectType: 4
+        guid: f0e17341040cf14cb100339a24dc1162
+      Path: Events/Default Work Unit/SX
+      maxAttenuation: 0
+      maxDuration: -1
+      minDuration: -1
+  RtpcWwu:
+  - PhysicalPath: Game Parameters/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Game Parameters
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 8606f81533dee343bcb4f3cf7189efe2
+    ParentPath: Game Parameters/Default Work Unit
+    guid: 8606f81533dee343bcb4f3cf7189efe2
+    GuidInternal: 
+    m_lastTime: -8584800840914980204
+    List:
+    - name: playerWarmth
+      guid: 7ad4735f00fc0a419ac2ab952c0934b9
+      id: 1486473541
+      PathAndIcons:
+      - ElementName: Game Parameters
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 8606f81533dee343bcb4f3cf7189efe2
+      - ElementName: playerWarmth
+        ObjectType: 13
+        guid: 7ad4735f00fc0a419ac2ab952c0934b9
+      Path: Game Parameters/Default Work Unit/playerWarmth
+  StateWwu:
+  - PhysicalPath: States/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: States
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 5fc19ec0b90f434cb98733807ae19fe9
+    ParentPath: States/Default Work Unit
+    guid: 5fc19ec0b90f434cb98733807ae19fe9
+    GuidInternal: 
+    m_lastTime: -8584800831217534198
+    List:
+    - name: New_State_Group
+      guid: f595911e51bfda4283315db0a77eff62
+      id: 2012657067
+      PathAndIcons:
+      - ElementName: States
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 5fc19ec0b90f434cb98733807ae19fe9
+      - ElementName: New_State_Group
+        ObjectType: 9
+        guid: f595911e51bfda4283315db0a77eff62
+      Path: States/Default Work Unit/New_State_Group
+      values:
+      - name: Indoors
+        guid: c735c8d7929ecf4c899511c19baeaf56
+        id: 4103860031
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5fc19ec0b90f434cb98733807ae19fe9
+        - ElementName: New_State_Group
+          ObjectType: 9
+          guid: f595911e51bfda4283315db0a77eff62
+        - ElementName: Indoors
+          ObjectType: 8
+          guid: c735c8d7929ecf4c899511c19baeaf56
+      - name: None
+        guid: 5d38567e1014514f9103b9cb51ecb022
+        id: 748895195
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5fc19ec0b90f434cb98733807ae19fe9
+        - ElementName: New_State_Group
+          ObjectType: 9
+          guid: f595911e51bfda4283315db0a77eff62
+        - ElementName: None
+          ObjectType: 8
+          guid: 5d38567e1014514f9103b9cb51ecb022
+      - name: Outdoors
+        guid: 8c3efd2cd3f7814c96da132efbfbbadf
+        id: 2730119150
+        PathAndIcons:
+        - ElementName: States
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 5fc19ec0b90f434cb98733807ae19fe9
+        - ElementName: New_State_Group
+          ObjectType: 9
+          guid: f595911e51bfda4283315db0a77eff62
+        - ElementName: Outdoors
+          ObjectType: 8
+          guid: 8c3efd2cd3f7814c96da132efbfbbadf
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  SwitchWwu:
+  - PhysicalPath: Switches/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Switches
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 84ea1d64bc8d6f4db14a40487cb98712
+    ParentPath: Switches/Default Work Unit
+    guid: 84ea1d64bc8d6f4db14a40487cb98712
+    GuidInternal: 
+    m_lastTime: -8584800829134615800
+    List:
+    - name: Music_Switch_Group
+      guid: b680ae793682cb4ab02fecee2c9a19b1
+      id: 1715037033
+      PathAndIcons:
+      - ElementName: Switches
+        ObjectType: 5
+        guid: 00000000000000000000000000000000
+      - ElementName: Default Work Unit
+        ObjectType: 12
+        guid: 84ea1d64bc8d6f4db14a40487cb98712
+      - ElementName: Music_Switch_Group
+        ObjectType: 11
+        guid: b680ae793682cb4ab02fecee2c9a19b1
+      Path: Switches/Default Work Unit/Music_Switch_Group
+      values:
+      - name: Outdoor_Intensity_A
+        guid: 5de30b43689f4e4287782f209eb13b85
+        id: 3850430009
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 84ea1d64bc8d6f4db14a40487cb98712
+        - ElementName: Music_Switch_Group
+          ObjectType: 11
+          guid: b680ae793682cb4ab02fecee2c9a19b1
+        - ElementName: Outdoor_Intensity_A
+          ObjectType: 10
+          guid: 5de30b43689f4e4287782f209eb13b85
+      - name: Outdoor_Intensity_B
+        guid: eedb61f5e9389b4aaa63375ba2599ab0
+        id: 3850430010
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 84ea1d64bc8d6f4db14a40487cb98712
+        - ElementName: Music_Switch_Group
+          ObjectType: 11
+          guid: b680ae793682cb4ab02fecee2c9a19b1
+        - ElementName: Outdoor_Intensity_B
+          ObjectType: 10
+          guid: eedb61f5e9389b4aaa63375ba2599ab0
+      - name: Outdoor_Intensity_C
+        guid: ffbdd0f34bc7494ca23f7d193ae6c760
+        id: 3850430011
+        PathAndIcons:
+        - ElementName: Switches
+          ObjectType: 5
+          guid: 00000000000000000000000000000000
+        - ElementName: Default Work Unit
+          ObjectType: 12
+          guid: 84ea1d64bc8d6f4db14a40487cb98712
+        - ElementName: Music_Switch_Group
+          ObjectType: 11
+          guid: b680ae793682cb4ab02fecee2c9a19b1
+        - ElementName: Outdoor_Intensity_C
+          ObjectType: 10
+          guid: ffbdd0f34bc7494ca23f7d193ae6c760
+      ValueGuids: []
+      ValueIcons: []
+      valuesInternal: []
+  TriggerWwu:
+  - PhysicalPath: Triggers/Default Work Unit.wwu
+    PathAndIcons:
+    - ElementName: Triggers
+      ObjectType: 5
+      guid: 00000000000000000000000000000000
+    - ElementName: Default Work Unit
+      ObjectType: 12
+      guid: 1509f358dc488d41b9994c1053818e08
+    ParentPath: Triggers/Default Work Unit
+    guid: 1509f358dc488d41b9994c1053818e08
+    GuidInternal: 
+    m_lastTime: -8584800922515290257
+    List: []
+  ExpandedFileSystemItemIds: 0200000003000000040000000500000006000000070000000a0000000b000000
+  ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b000000
+  AutoSyncSelection: 0
+  autoPopulateEnabled: 1
+  currentDataSource: 1
+  CurrentPluginConfig: 
