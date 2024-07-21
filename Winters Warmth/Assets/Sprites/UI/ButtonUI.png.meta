@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 010d365ceb188064191a470bcdb63f1d
+guid: b2f10f20bc355f8498c00ae2644cc26a
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2413806693520163455
-    second: Circle_0
+      213: 7678958706763709291
+    second: ButtonUI_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -84,6 +84,19 @@ TextureImporter:
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
   - serializedVersion: 4
+    buildTarget: Win64
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -113,7 +126,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Circle_0
+      name: ButtonUI_0
       rect:
         serializedVersion: 2
         x: 0
@@ -128,8 +141,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 18d3544e99f608ed0800000000000000
-      internalID: -2413806693520163455
+      spriteID: b6b3b894244219a60800000000000000
+      internalID: 7678958706763709291
       vertices: []
       indices: 
       edges: []
@@ -147,8 +160,7 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable:
-      Circle_0: -2413806693520163455
+    nameFileIdTable: {}
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
