@@ -966,6 +966,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1266310718899398253}
+  - component: {fileID: 3879994740250744952}
   m_Layer: 0
   m_Name: UIs
   m_TagString: Untagged
@@ -990,6 +991,25 @@ Transform:
   - {fileID: 1772679439680470168}
   m_Father: {fileID: 8614877873171680033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &3879994740250744952
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5156164199415855421}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ee82e792c8b43de48be4c1583e7c1cb7, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  HUD: {fileID: 360221484809822316}
+  pauseMenu: {fileID: 7158682864801515324}
+  freezing: {fileID: 4183961846373390691}
+  playerHealth: {fileID: 2952968002846984050}
+  houseHealth: {fileID: 2530503635663113093}
+  carrying: {fileID: 871487284408239308}
+  maxCapacity: {fileID: 4557879719913767026}
 --- !u!1 &5341726862673551696
 GameObject:
   m_ObjectHideFlags: 0
