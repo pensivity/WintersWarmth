@@ -168,8 +168,8 @@ MonoBehaviour:
         guid: b9e3c879eca62f4db9b2a883122cf686
       Path: Events\Default Work Unit\Play_Cheese
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0.7188889
+      minDuration: 0.7188889
     - name: Play_footsteps_indoor
       guid: c4b3c15895c2c14c9893984e676962f9
       id: 2885024351
@@ -260,8 +260,8 @@ MonoBehaviour:
         guid: 7760b421b8f09a47b45ecfc4e85b19fb
       Path: Events\Default Work Unit\SX\Indoors\Play_generator_start
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 4
+      minDuration: 4
     - name: Play_generator_stop
       guid: a389e92d3fdcd44380751b2a5e54009c
       id: 1828218492
@@ -283,8 +283,8 @@ MonoBehaviour:
         guid: a389e92d3fdcd44380751b2a5e54009c
       Path: Events\Default Work Unit\SX\Indoors\Play_generator_stop
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 7.2278233
+      minDuration: 7.2278233
     - name: Play_generator_under_load_LP
       guid: cba3fdd9aa8a7248853461fcf867775f
       id: 1665291020
@@ -372,8 +372,8 @@ MonoBehaviour:
         guid: 198e54ff47ec1e4fa0230c6251208af5
       Path: Events\Default Work Unit\SX\Outdoors\Stop_footsteps_outdoor
       maxAttenuation: 0
-      maxDuration: -1
-      minDuration: -1
+      maxDuration: 0
+      minDuration: 0
     - name: SX
       guid: f0e17341040cf14cb100339a24dc1162
       id: 1584861564
