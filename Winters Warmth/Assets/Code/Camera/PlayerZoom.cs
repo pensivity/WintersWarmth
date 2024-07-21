@@ -28,6 +28,7 @@ public class PlayerZoom : MonoBehaviour
             if (isZoomInTrigger)
             {
                 zoomOut.Raise();
+
             }
             else
             {

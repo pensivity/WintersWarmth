@@ -14,6 +14,8 @@ public class ConversationUIManager : MonoBehaviour
         public Sprite rightCharacterSprite;
         public bool isLeftCharacterSpeaking;
         public bool flipLeftCharacter;
+        public bool showLeftCharacter = true;
+        public bool showRightCharacter = true;
     }
 
     public Image leftCharacterImage;
@@ -56,17 +58,34 @@ public class ConversationUIManager : MonoBehaviour
 
     private void UpdateCharacterSprites(DialogueLine line)
     {
-        leftCharacterImage.sprite = line.leftCharacterSprite;
-        rightCharacterImage.sprite = line.rightCharacterSprite;
+        // Update left character
+        if (line.showLeftCharacter)
+        {
+            leftCharacterImage.gameObject.SetActive(true);
+            leftCharacterImage.sprite = line.leftCharacterSprite;
+            leftCharacterImage.transform.localScale = new Vector3(
+                line.flipLeftCharacter ? -1 : 1,
+                1,
+                1
+            );
+            leftCharacterImage.color = line.isLeftCharacterSpeaking ? Color.white : Color.gray;
+        }
+        else
+        {
+            leftCharacterImage.gameObject.SetActive(false);
+        }
 
-        leftCharacterImage.transform.localScale = new Vector3(
-            line.flipLeftCharacter ? -1 : 1,
-            1,
-            1
-        );
-
-        leftCharacterImage.color = line.isLeftCharacterSpeaking ? Color.white : Color.gray;
-        rightCharacterImage.color = line.isLeftCharacterSpeaking ? Color.gray : Color.white;
+        // Update right character
+        if (line.showRightCharacter)
+        {
+            rightCharacterImage.gameObject.SetActive(true);
+            rightCharacterImage.sprite = line.rightCharacterSprite;
+            rightCharacterImage.color = line.isLeftCharacterSpeaking ? Color.gray : Color.white;
+        }
+        else
+        {
+            rightCharacterImage.gameObject.SetActive(false);
+        }
     }
 
     private IEnumerator TypeText(string text)
@@ -102,5 +121,4 @@ public class ConversationUIManager : MonoBehaviour
     {
         return conversation;
     }
-
 }

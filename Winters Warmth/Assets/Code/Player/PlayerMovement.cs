@@ -51,6 +51,7 @@ public class PlayerMovement : MonoBehaviour
     public bool IsMoving()
     {
         return input.magnitude > 0.1f;
+
     }
 
     public Direction GetCurrentDirection()

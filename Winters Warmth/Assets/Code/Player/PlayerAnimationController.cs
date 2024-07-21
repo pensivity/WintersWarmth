@@ -11,9 +11,14 @@ public class PlayerAnimationController : MonoBehaviour
     [SerializeField] private float breathingSpeed = 1f;
     [SerializeField] private float breathingAmount = 0.05f;
 
+    [Header("Sound")]
+    [SerializeField] private float footstepSoundCooldown = 0.5f;
+
     private const string IS_WALKING = "IsWalking";
     private Vector3 originalScale;
     private Coroutine breathingCoroutine;
+    private bool wasWalking = false;
+    private float lastFootstepSoundTime = 0f;
 
     void Start()
     {
@@ -43,6 +48,18 @@ public class PlayerAnimationController : MonoBehaviour
             {
                 spriteRenderer.flipX = true;
             }
+
+            if (isWalking && !wasWalking && Time.time - lastFootstepSoundTime > footstepSoundCooldown)
+            {
+                AkSoundEngine.PostEvent("Play_Footsteps_outdoor", gameObject);
+                lastFootstepSoundTime = Time.time;
+            }
+            else if (!isWalking && wasWalking)
+            {
+                AkSoundEngine.PostEvent("Stop_Footsteps_outdoor", gameObject);
+            }
+
+            wasWalking = isWalking;
 
             if (isWalking)
             {
@@ -93,4 +110,7 @@ public class PlayerAnimationController : MonoBehaviour
         }
         transform.localScale = endScale;
     }
+
+    public void SoundIndoor(Component sender, object data) { }
+    public void SoundOutdoors(Component sender, object data) { }
 }
