@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections.Generic;
+using System;
 
 public class ConversationSystemManager : MonoBehaviour
 {
@@ -16,6 +17,9 @@ public class ConversationSystemManager : MonoBehaviour
     }
 
     public List<Conversation> conversations = new List<Conversation>();
+
+    // Add an event for conversation end
+    public event Action<string> OnConversationEnded;
 
     private void Awake()
     {
@@ -35,7 +39,7 @@ public class ConversationSystemManager : MonoBehaviour
         Conversation convo = conversations.Find(c => c.conversationID == conversationID);
         if (convo == null)
         {
-            // Debug.LogError($"Conversation with ID {conversationID} not found!");
+            Debug.LogError($"Conversation with ID {conversationID} not found!");
             return;
         }
 
@@ -61,8 +65,15 @@ public class ConversationSystemManager : MonoBehaviour
     {
         if (activeConversationUI != null)
         {
+            string endedConversationID = conversations.Find(c => c.lines == activeConversationUI.GetCurrentConversation())?.conversationID;
             Destroy(activeConversationUI.gameObject);
             activeConversationUI = null;
+
+            // Trigger the event when the conversation ends
+            if (!string.IsNullOrEmpty(endedConversationID))
+            {
+                OnConversationEnded?.Invoke(endedConversationID);
+            }
         }
     }
 }

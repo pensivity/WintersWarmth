@@ -4,16 +4,20 @@ using UnityEngine;
 public class ResourceManager : MonoBehaviour
 {
     [SerializeField] public int houseWarmth;
+    [SerializeField] public int houseWarmthMax;
 
     private bool isCooling;
     private PlayerController player;
+    private GameManager gm;
     private int addedWarmth;
 
     private void Awake()
     {
-        houseWarmth = 100;
+        houseWarmthMax = 100;
+        houseWarmth = houseWarmthMax;
         isCooling = false;
         player = GameObject.Find("PlayerController").GetComponent<PlayerController>();
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         addedWarmth = 20;
     }
 
@@ -22,6 +26,11 @@ public class ResourceManager : MonoBehaviour
     void FixedUpdate()
     {
         StartCoroutine(DecreaseWarmth());
+
+        if (houseWarmth < 0)
+        {
+            gm.hasLost = true;
+        }
     }
 
     IEnumerator DecreaseWarmth ()
@@ -40,6 +49,10 @@ public class ResourceManager : MonoBehaviour
     public void AddFuel(Component sender, object data)
     {
         houseWarmth += player.carryCapacity * addedWarmth;
+        if (houseWarmth > houseWarmthMax)
+        {
+            houseWarmthMax = houseWarmth;
+        }
         player.carryCapacity = 0;
     }
 }
