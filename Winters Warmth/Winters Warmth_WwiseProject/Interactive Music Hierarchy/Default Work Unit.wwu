@@ -25,7 +25,7 @@
 										<MusicTransition Name="Transition" ID="{84C1374E-CCCD-4BB4-8723-6F5B4D37B400}">
 											<PropertyList>
 												<Property Name="EnableSourceFadeOut" Type="bool" Value="True"/>
-												<Property Name="ExitSourceAt" Type="int16" Value="2"/>
+												<Property Name="ExitSourceAt" Type="int16" Value="1"/>
 											</PropertyList>
 											<TransitionInfo>
 												<SourceFadeOut>
@@ -129,36 +129,33 @@
 												<Property Name="LoopCount" Type="int16" Value="0"/>
 											</PropertyList>
 											<ChildrenList>
-												<MusicPlaylistItem Name="" ID="{65897677-DAA5-41CE-8ECE-28D416F66E96}" ShortID="50209086">
+												<MusicPlaylistItem Name="" ID="{EC7B0954-DDE9-4656-A781-298F934739C9}" ShortID="553855510">
 													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="mx_outdoors_A" ID="{AC2952E4-2A2B-48D6-8B58-8BA7429E1084}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
+															<ObjectRef Name="mx_outdoors_long_A" ID="{26D48687-D4EB-423B-A2F8-CF815CEC5D05}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
-												<MusicPlaylistItem Name="" ID="{30684F07-AC75-43C1-956A-11B8AC932DD5}" ShortID="44284917">
+												<MusicPlaylistItem Name="" ID="{B1C86928-EEC5-40B0-918A-E6EB3A40FEF7}" ShortID="236184549">
 													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="mx_outdoors_b" ID="{998C7D3F-403C-4070-9937-92B1777A04A8}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
+															<ObjectRef Name="mx_outdoors_long_B" ID="{6080E457-E5AB-4552-8EBD-D95D31E5A476}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
-												<MusicPlaylistItem Name="" ID="{01A41A9A-702C-4C2A-8981-E0AB9D3144EC}" ShortID="644209799">
+												<MusicPlaylistItem Name="" ID="{7E2C3BF4-C391-4CF0-9E72-B68B6A21AD19}" ShortID="97689358">
 													<PropertyList>
-														<Property Name="LoopCount" Type="int16" Value="0"/>
 														<Property Name="PlaylistItemType" Type="int16" Value="1"/>
 													</PropertyList>
 													<ReferenceList>
 														<Reference Name="Segment">
-															<ObjectRef Name="mx_outdoors_c" ID="{2C8C2760-CB57-4BB9-BD15-AD975D950989}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
+															<ObjectRef Name="mx_outdoors_long_C" ID="{7A2BC102-DD2A-4DE5-980B-686E78B260AD}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
 														</Reference>
 													</ReferenceList>
 												</MusicPlaylistItem>
@@ -183,9 +180,9 @@
 								</Reference>
 							</ReferenceList>
 							<ChildrenList>
-								<MusicSegment Name="mx_outdoors_A" ID="{AC2952E4-2A2B-48D6-8B58-8BA7429E1084}" ShortID="752370171">
+								<MusicSegment Name="mx_outdoors_long_A" ID="{26D48687-D4EB-423B-A2F8-CF815CEC5D05}" ShortID="533015201">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="11111.1111111111"/>
+										<Property Name="EndPosition" Type="Real64" Value="115555.555555556"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -196,14 +193,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="mx_outdoors_A" ID="{CCE8EC65-DAC4-4E26-B75E-4A3C68D48E55}" ShortID="302580765">
+										<MusicTrack Name="mx_outdoors_long_A" ID="{AE96022C-57D3-4D06-B2E3-F5B92FB9BD84}" ShortID="100120315">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{96D073E3-91D8-4A84-BE12-744258526F99}">
+														<MusicTransition Name="Root" ID="{0E92214C-E8FE-48A8-8701-8762F9B7321A}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -213,11 +210,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="mx_outdoors_A" ID="{8B30994E-211F-4B26-99D6-41AD344BB630}">
+												<AudioFileSource Name="mx_outdoors_long_A" ID="{CA3DDBB1-2E6E-456F-B60D-465B0E878F7A}">
 													<Language>SFX</Language>
-													<AudioFile>mx_outdoors_A.wav</AudioFile>
+													<AudioFile>mx_outdoors_long_A.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="242579603"/>
+														<MediaID ID="384554675"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -225,18 +222,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{BD5825F0-B9C9-465C-B2A8-59AFD4CBB1E8}">
+															<MusicTrackSequence Name="" ID="{5E0590F8-E384-48F2-942F-07DB010ED3DA}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="mx_outdoors_A" ID="{8A6310A7-89A0-485F-BD02-27EAEFB6B643}">
+																				<MusicClip Name="mx_outdoors_long_A" ID="{47E1BAA7-7CC8-41FB-A21D-D4EB37ED84B6}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="11111.1111111111"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="115555.555555556"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="mx_outdoors_A" ID="{8B30994E-211F-4B26-99D6-41AD344BB630}"/>
+																					<AudioSourceRef Name="mx_outdoors_long_A" ID="{CA3DDBB1-2E6E-456F-B60D-465B0E878F7A}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -253,15 +250,15 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{43BAD167-EF97-44EE-A0A6-75C72F9677A6}"/>
+													<MusicCue Name="Entry Cue" ID="{6E1E0A9D-2737-4424-AFCD-605B7041B0F3}"/>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{30CCA971-6220-45B9-9FA4-EC6958893484}">
+													<MusicCue Name="Exit Cue" ID="{3A5C5C2B-2FF0-4552-AAAB-DE0897B00A47}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="8888.88888888889"/>
+															<Property Name="TimeMs" Type="Real64" Value="115555.555555556"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -269,9 +266,9 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
-								<MusicSegment Name="mx_outdoors_b" ID="{998C7D3F-403C-4070-9937-92B1777A04A8}" ShortID="497295755">
+								<MusicSegment Name="mx_outdoors_long_B" ID="{6080E457-E5AB-4552-8EBD-D95D31E5A476}" ShortID="329381508">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="11111.1111111111"/>
+										<Property Name="EndPosition" Type="Real64" Value="115555.555555556"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -282,14 +279,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="mx_outdoors_b" ID="{7CC44E4A-7807-4EEA-94F2-FA8028A08AD0}" ShortID="803584001">
+										<MusicTrack Name="mx_outdoors_long_B" ID="{EB6F2F6B-07BF-4354-B564-3364E7970361}" ShortID="559536290">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{6D0AAB5C-1070-4058-A15E-B4E4C214635A}">
+														<MusicTransition Name="Root" ID="{51C55800-9751-49E6-972F-48F1B0E78382}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -299,11 +296,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="mx_outdoors_b" ID="{F0DA592A-1DBB-4762-9E98-9DCFEED110CA}">
+												<AudioFileSource Name="mx_outdoors_long_B" ID="{45684502-A9B8-4FC6-9AC1-A9BAB81CE63B}">
 													<Language>SFX</Language>
-													<AudioFile>mx_outdoors_b.wav</AudioFile>
+													<AudioFile>mx_outdoors_long_B.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="97362556"/>
+														<MediaID ID="68501715"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -311,18 +308,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{1E0C2831-44DE-4F8C-A95B-8FC26B1339C2}">
+															<MusicTrackSequence Name="" ID="{5DA28553-42DE-4F77-B9FB-AF8D4994C20D}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="mx_outdoors_b" ID="{66EFDD71-6894-4967-B9FF-8201B4621F5B}">
+																				<MusicClip Name="mx_outdoors_long_B" ID="{7A9214D5-8B14-4DB3-B1D5-B674FA99470D}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="11111.1111111111"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="115555.555555556"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="mx_outdoors_b" ID="{F0DA592A-1DBB-4762-9E98-9DCFEED110CA}"/>
+																					<AudioSourceRef Name="mx_outdoors_long_B" ID="{45684502-A9B8-4FC6-9AC1-A9BAB81CE63B}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -339,15 +336,15 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{45E748C2-63D3-4AB8-8638-0CAF998AD3F3}"/>
+													<MusicCue Name="Entry Cue" ID="{95996FBE-F51A-4BDB-88C6-81C0A6E083E0}"/>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{0B797672-18CC-44FE-A7DA-C732C5DDA15A}">
+													<MusicCue Name="Exit Cue" ID="{DD352BFA-6134-4641-B95E-7DD3384254FF}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="8888.88888888889"/>
+															<Property Name="TimeMs" Type="Real64" Value="115555.555555556"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -355,9 +352,9 @@
 										</ObjectList>
 									</ObjectLists>
 								</MusicSegment>
-								<MusicSegment Name="mx_outdoors_c" ID="{2C8C2760-CB57-4BB9-BD15-AD975D950989}" ShortID="195039898">
+								<MusicSegment Name="mx_outdoors_long_C" ID="{7A2BC102-DD2A-4DE5-980B-686E78B260AD}" ShortID="943479520">
 									<PropertyList>
-										<Property Name="EndPosition" Type="Real64" Value="11111.1111111111"/>
+										<Property Name="EndPosition" Type="Real64" Value="115555.555555556"/>
 									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Conversion">
@@ -368,14 +365,14 @@
 										</Reference>
 									</ReferenceList>
 									<ChildrenList>
-										<MusicTrack Name="mx_outdoors_c" ID="{F57FAF4D-0C69-4EFA-81FC-F32D019EC630}" ShortID="310267375">
+										<MusicTrack Name="mx_outdoors_long_C" ID="{CD78DF43-7E26-43A5-8F0C-602F22C6EEDD}" ShortID="1042634095">
 											<ReferenceList>
 												<Reference Name="OutputBus">
 													<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
 												</Reference>
 												<Reference Name="TransitionRoot">
 													<Custom>
-														<MusicTransition Name="Root" ID="{D19EA47A-4654-4A96-99D2-5D77F5465209}">
+														<MusicTransition Name="Root" ID="{4A3528F7-2BBB-410A-B1B2-5683D654286F}">
 															<PropertyList>
 																<Property Name="IsFolder" Type="bool" Value="True"/>
 															</PropertyList>
@@ -385,11 +382,11 @@
 												</Reference>
 											</ReferenceList>
 											<ChildrenList>
-												<AudioFileSource Name="mx_outdoors_c" ID="{02EC9D4F-6EBD-44D7-8914-73C7515D4946}">
+												<AudioFileSource Name="mx_outdoors_long_C" ID="{8CFE6F14-881A-4BFE-885F-162959504090}">
 													<Language>SFX</Language>
-													<AudioFile>mx_outdoors_c.wav</AudioFile>
+													<AudioFile>mx_outdoors_long_C.wav</AudioFile>
 													<MediaIDList>
-														<MediaID ID="736738194"/>
+														<MediaID ID="143950729"/>
 													</MediaIDList>
 												</AudioFileSource>
 											</ChildrenList>
@@ -397,18 +394,18 @@
 												<ObjectList Name="Sequences">
 													<Reference>
 														<Local>
-															<MusicTrackSequence Name="" ID="{8434FDA5-0C31-4D4F-845F-F015CA30656B}">
+															<MusicTrackSequence Name="" ID="{A0497E4F-4E01-4513-89D2-5750D820A13A}">
 																<ObjectLists>
 																	<ObjectList Name="Clips">
 																		<Reference>
 																			<Local>
-																				<MusicClip Name="mx_outdoors_c" ID="{EC435BF1-B5A2-4EDD-840F-CE1F6902C8FE}">
+																				<MusicClip Name="mx_outdoors_long_C" ID="{B53B01F7-442F-4378-8F11-7F120AA3F63D}">
 																					<PropertyList>
-																						<Property Name="EndTrimOffset" Type="Real64" Value="11111.1111111111"/>
+																						<Property Name="EndTrimOffset" Type="Real64" Value="115555.555555556"/>
 																						<Property Name="FadeInMode" Type="int16" Value="0"/>
 																						<Property Name="FadeOutMode" Type="int16" Value="0"/>
 																					</PropertyList>
-																					<AudioSourceRef Name="mx_outdoors_c" ID="{02EC9D4F-6EBD-44D7-8914-73C7515D4946}"/>
+																					<AudioSourceRef Name="mx_outdoors_long_C" ID="{8CFE6F14-881A-4BFE-885F-162959504090}"/>
 																				</MusicClip>
 																			</Local>
 																		</Reference>
@@ -425,15 +422,15 @@
 										<ObjectList Name="Cues">
 											<Reference>
 												<Local>
-													<MusicCue Name="Entry Cue" ID="{FD684431-499F-46C8-8D7A-7D08B3269D95}"/>
+													<MusicCue Name="Entry Cue" ID="{16829730-B873-4887-AA6E-CF4DF6ACF10F}"/>
 												</Local>
 											</Reference>
 											<Reference>
 												<Local>
-													<MusicCue Name="Exit Cue" ID="{9A759E80-DEDE-4EA2-B909-F3EF1A3E2CF4}">
+													<MusicCue Name="Exit Cue" ID="{90F46621-8C76-4BB0-A689-DA22B30C86B9}">
 														<PropertyList>
 															<Property Name="CueType" Type="int16" Value="1"/>
-															<Property Name="TimeMs" Type="Real64" Value="8888.88888888889"/>
+															<Property Name="TimeMs" Type="Real64" Value="115555.555555556"/>
 														</PropertyList>
 													</MusicCue>
 												</Local>
@@ -457,6 +454,9 @@
 								<Reference Name="PlaylistRoot">
 									<Custom>
 										<MusicPlaylistItem Name="" ID="{1D6B3F01-E251-4386-9E28-C9076343442A}" ShortID="420869101">
+											<PropertyList>
+												<Property Name="LoopCount" Type="int16" Value="0"/>
+											</PropertyList>
 											<ChildrenList>
 												<MusicPlaylistItem Name="" ID="{4C91EF4B-9287-4C12-8BFC-933E03910B7F}" ShortID="624272896">
 													<PropertyList>
@@ -581,10 +581,14 @@
 					<StateInfo>
 						<StateGroupList>
 							<StateGroupInfo>
-								<StateGroupRef Name="New_State_Group" ID="{1E9195F5-BF51-42DA-8331-5DB0A77EFF62}"/>
+								<StateGroupRef Name="Music_State_Group" ID="{1E9195F5-BF51-42DA-8331-5DB0A77EFF62}"/>
 							</StateGroupInfo>
 						</StateGroupList>
 						<CustomStateList>
+							<CustomState>
+								<StateRef Name="TitleScreen" ID="{1AA26169-5B7B-4A73-8FB3-A1EA944BD982}"/>
+								<CustomState Name="" ID="{854403E9-1483-4E67-B8F1-4FD23EFB07DC}" ShortID="575190023"/>
+							</CustomState>
 							<CustomState>
 								<StateRef Name="Outdoors" ID="{2CFD3E8C-F7D3-4C81-96DA-132EFBFBBADF}"/>
 								<CustomState Name="" ID="{96A279A0-1529-4D39-9246-5ABEEC3DFB84}" ShortID="549750629"/>
@@ -598,7 +602,7 @@
 					<ObjectLists>
 						<ObjectList Name="Arguments">
 							<Reference>
-								<ObjectRef Name="New_State_Group" ID="{1E9195F5-BF51-42DA-8331-5DB0A77EFF62}" WorkUnitID="{C09EC15F-0FB9-4C43-B987-33807AE19FE9}"/>
+								<ObjectRef Name="Music_State_Group" ID="{1E9195F5-BF51-42DA-8331-5DB0A77EFF62}" WorkUnitID="{C09EC15F-0FB9-4C43-B987-33807AE19FE9}"/>
 							</Reference>
 							<Reference>
 								<ObjectRef Name="Music_Switch_Group" ID="{79AE80B6-8236-4ACB-B02F-ECEE2C9A19B1}" WorkUnitID="{641DEA84-8DBC-4D6F-B14A-40487CB98712}"/>
@@ -610,7 +614,7 @@
 									<MultiSwitchEntry Name="" ID="{72DE9B24-EB26-4613-A2C2-E12F2DEEF6B3}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="mx_outdoors_A" ID="{AC2952E4-2A2B-48D6-8B58-8BA7429E1084}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
+												<ObjectRef Name="mx_outdoors_long_A" ID="{26D48687-D4EB-423B-A2F8-CF815CEC5D05}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -631,7 +635,7 @@
 									<MultiSwitchEntry Name="" ID="{702CD5F5-6B30-4610-B9B9-B5271DB435F1}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="mx_outdoors_b" ID="{998C7D3F-403C-4070-9937-92B1777A04A8}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
+												<ObjectRef Name="mx_outdoors_long_B" ID="{6080E457-E5AB-4552-8EBD-D95D31E5A476}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>
@@ -652,7 +656,7 @@
 									<MultiSwitchEntry Name="" ID="{AA9D0C5B-D720-43F9-92BF-0574359FB914}">
 										<ReferenceList>
 											<Reference Name="AudioNode">
-												<ObjectRef Name="mx_outdoors_c" ID="{2C8C2760-CB57-4BB9-BD15-AD975D950989}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
+												<ObjectRef Name="mx_outdoors_long_C" ID="{7A2BC102-DD2A-4DE5-980B-686E78B260AD}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
 											</Reference>
 										</ReferenceList>
 										<ObjectLists>

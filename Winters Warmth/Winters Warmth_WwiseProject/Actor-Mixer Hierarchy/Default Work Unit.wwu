@@ -45,6 +45,11 @@
 						<Sound Name="generator_run_LP" ID="{01826543-EDE8-4810-A0FB-3BDE96576EC2}" ShortID="902392121">
 							<PropertyList>
 								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-19</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -68,6 +73,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="generator_start" ID="{ACB748F8-D660-4E45-BE2D-8E631B611D96}" ShortID="2596075">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
@@ -90,6 +102,13 @@
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="generator_stop" ID="{34675ECE-C63A-4FC4-ABC1-0BA93F40E814}" ShortID="14466000">
+							<PropertyList>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-15</Value>
+									</ValueList>
+								</Property>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
@@ -115,6 +134,11 @@
 							<PropertyList>
 								<Property Name="PlayMechanismStepOrContinuous" Type="int16" Value="0"/>
 								<Property Name="RandomOrSequence" Type="int16" Value="0"/>
+								<Property Name="Volume" Type="Real64">
+									<ValueList>
+										<Value>-16</Value>
+									</ValueList>
+								</Property>
 							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
@@ -197,6 +221,9 @@
 					</ReferenceList>
 					<ChildrenList>
 						<Sound Name="wind_int_1_LP" ID="{3B1DEF82-22C6-482A-A3D2-864A978A1B3C}" ShortID="813661502">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
@@ -210,15 +237,72 @@
 									<Language>SFX</Language>
 									<AudioFile>wind_int_1_LP.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="100899792"/>
+										<MediaID ID="445649021"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{92E8D152-824D-4EEC-961D-B87F5E49961B}" ShortID="92075064">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}" WorkUnitID="{15F80686-DE33-43E3-BCB4-F3CF7189EFE2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{2C91B6E2-D379-4467-897F-C4C472688847}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>3.8813</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.37428</XPos>
+																		<YPos>0.07103</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>15.2591170825336</XPos>
+																		<YPos>0.133644838128613</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>99.999</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="wind_int_1_LP" ID="{1F62375E-655B-4EBF-93D1-1E1ACF46000B}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="wind_int_2_LP" ID="{436765F9-3367-4632-ABE0-93D80BAFDF1C}" ShortID="247426813">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
@@ -232,15 +316,72 @@
 									<Language>SFX</Language>
 									<AudioFile>wind_int_2_LP.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="328259957"/>
+										<MediaID ID="642269066"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{703968F5-B46D-4F08-95BE-1F5CCE152725}" ShortID="262501497">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}" WorkUnitID="{15F80686-DE33-43E3-BCB4-F3CF7189EFE2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{0D10F346-F6B0-42EF-92B6-8082D7C0C3A5}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>3.29019</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.07678</XPos>
+																		<YPos>0.18121</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>50.19194</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>80.03839</XPos>
+																		<YPos>0.24915</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="wind_int_2_LP" ID="{D1E8A4E5-7783-479B-A234-546DC77499F0}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="wind_int_3_LP" ID="{12F08FB4-65D1-4482-B1C9-A675C69274F2}" ShortID="90023428">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
@@ -254,15 +395,62 @@
 									<Language>SFX</Language>
 									<AudioFile>wind_int_3_LP.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="651378904"/>
+										<MediaID ID="961227276"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{39E494B3-DD8A-4A97-B753-EF74F8CAE448}" ShortID="750944732">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}" WorkUnitID="{15F80686-DE33-43E3-BCB4-F3CF7189EFE2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{2078F688-41BC-409B-9E2E-466AAACC74E0}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>2.21649</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>4.60652591170825</XPos>
+																		<YPos>-0.367067029206166</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-10.80346</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="wind_int_3_LP" ID="{C5E31C64-ED53-4C66-B3D4-0BB19BEA45C7}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="wind_int_4_LP" ID="{40E43510-C9BB-457F-B987-3B00C8A7B371}" ShortID="807726122">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
@@ -276,15 +464,82 @@
 									<Language>SFX</Language>
 									<AudioFile>wind_int_4_LP.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="1047407644"/>
+										<MediaID ID="42746598"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{4651C19F-61D9-49E9-ADF0-E6CD8EB92925}" ShortID="158940220">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}" WorkUnitID="{15F80686-DE33-43E3-BCB4-F3CF7189EFE2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{A41CDDC0-132B-4228-BC1B-FA6768C89D56}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>1.4439</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>10.74856</XPos>
+																		<YPos>-6.90874</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>27.63916</XPos>
+																		<YPos>-0.3493</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>64.20346</XPos>
+																		<YPos>-20.90646</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>81.19002</XPos>
+																		<YPos>-23.86546</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>85.6046</XPos>
+																		<YPos>-11.31022</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="wind_int_4_LP" ID="{C3FFFB68-2475-40AC-80A6-43252FCB6CDF}" Platform="Linked"/>
 							</ActiveSourceList>
 						</Sound>
 						<Sound Name="wind_int_5_LP" ID="{77B629C2-3E53-42D1-BB71-760CEA4097E0}" ShortID="948961039">
+							<PropertyList>
+								<Property Name="IsLoopingEnabled" Type="bool" Value="True"/>
+							</PropertyList>
 							<ReferenceList>
 								<Reference Name="Conversion">
 									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
@@ -298,10 +553,64 @@
 									<Language>SFX</Language>
 									<AudioFile>wind_int_5_LP.wav</AudioFile>
 									<MediaIDList>
-										<MediaID ID="812489990"/>
+										<MediaID ID="758792607"/>
 									</MediaIDList>
 								</AudioFileSource>
 							</ChildrenList>
+							<ObjectLists>
+								<ObjectList Name="RTPC">
+									<Reference>
+										<Local>
+											<RTPC Name="" ID="{6056D9D9-4B6E-4E49-A9A3-B53633D767E0}" ShortID="355168387">
+												<PropertyList>
+													<Property Name="PropertyName" Type="string" Value="Volume"/>
+												</PropertyList>
+												<ReferenceList>
+													<Reference Name="ControlInput">
+														<ObjectRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}" WorkUnitID="{15F80686-DE33-43E3-BCB4-F3CF7189EFE2}"/>
+													</Reference>
+													<Reference Name="Curve">
+														<Custom>
+															<Curve Name="" ID="{D8E9BC5D-696D-4CAD-B9DB-5FB560C797D7}">
+																<PropertyList>
+																	<Property Name="Flags" Type="int32" Value="3"/>
+																</PropertyList>
+																<PointList>
+																	<Point>
+																		<XPos>0</XPos>
+																		<YPos>9.31079</YPos>
+																		<Flags>5</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>2.49520153550863</XPos>
+																		<YPos>0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>5.27831</XPos>
+																		<YPos>-0</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>20.05759</XPos>
+																		<YPos>-200</YPos>
+																		<Flags>0</Flags>
+																	</Point>
+																	<Point>
+																		<XPos>100</XPos>
+																		<YPos>0</YPos>
+																		<Flags>37</Flags>
+																	</Point>
+																</PointList>
+															</Curve>
+														</Custom>
+													</Reference>
+												</ReferenceList>
+											</RTPC>
+										</Local>
+									</Reference>
+								</ObjectList>
+							</ObjectLists>
 							<ActiveSourceList>
 								<ActiveSource Name="wind_int_5_LP" ID="{D7C02BEF-7C90-4959-9924-C42409C6BFC3}" Platform="Linked"/>
 							</ActiveSourceList>
@@ -331,128 +640,6 @@
 							</BlendTrackAssocList>
 						</BlendTrack>
 					</BlendTrackList>
-				</BlendContainer>
-				<BlendContainer Name="WindBlendContainer TEST" ID="{C629DD69-2DF9-49B5-A835-3365D2696DFF}" ShortID="490924296">
-					<ReferenceList>
-						<Reference Name="Conversion">
-							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
-						</Reference>
-						<Reference Name="OutputBus">
-							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
-						</Reference>
-					</ReferenceList>
-					<ChildrenList>
-						<Sound Name="wind_int_1_LP" ID="{E92C4FA5-C4DA-432B-BE7C-C7E3597D468B}" ShortID="278817595">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="wind_int_1_LP" ID="{A64CA4CC-EB79-4F9F-BC83-2BCB2C1450ED}">
-									<Language>SFX</Language>
-									<AudioFile>wind_int_1_LP.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="100899792"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="wind_int_1_LP" ID="{A64CA4CC-EB79-4F9F-BC83-2BCB2C1450ED}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="wind_int_2_LP" ID="{80E19684-9B77-4B57-BFC4-DC6F8E189D93}" ShortID="164665095">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="wind_int_2_LP" ID="{4E73407B-341C-4644-BECA-0296268A2441}">
-									<Language>SFX</Language>
-									<AudioFile>wind_int_2_LP.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="328259957"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="wind_int_2_LP" ID="{4E73407B-341C-4644-BECA-0296268A2441}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="wind_int_3_LP" ID="{AD5D03F2-8230-45D9-A049-3E73563517C6}" ShortID="765815147">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="wind_int_3_LP" ID="{A165FCBD-BFDC-48B4-BEF5-D2F3515E4904}">
-									<Language>SFX</Language>
-									<AudioFile>wind_int_3_LP.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="651378904"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="wind_int_3_LP" ID="{A165FCBD-BFDC-48B4-BEF5-D2F3515E4904}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="wind_int_4_LP" ID="{B2052DF4-0FDE-4E54-A73A-A9DE5FF4AE5E}" ShortID="658680256">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="wind_int_4_LP" ID="{DDD9E0D1-51F9-494B-A6E0-0ECE7B0D5A76}">
-									<Language>SFX</Language>
-									<AudioFile>wind_int_4_LP.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="1047407644"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="wind_int_4_LP" ID="{DDD9E0D1-51F9-494B-A6E0-0ECE7B0D5A76}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-						<Sound Name="wind_int_5_LP" ID="{6CA14F51-7168-450B-99B4-E7A9215C1661}" ShortID="202914175">
-							<ReferenceList>
-								<Reference Name="Conversion">
-									<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
-								</Reference>
-								<Reference Name="OutputBus">
-									<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
-								</Reference>
-							</ReferenceList>
-							<ChildrenList>
-								<AudioFileSource Name="wind_int_5_LP" ID="{E7BD198A-787B-4107-8599-1BE5A3DF8F06}">
-									<Language>SFX</Language>
-									<AudioFile>wind_int_5_LP.wav</AudioFile>
-									<MediaIDList>
-										<MediaID ID="812489990"/>
-									</MediaIDList>
-								</AudioFileSource>
-							</ChildrenList>
-							<ActiveSourceList>
-								<ActiveSource Name="wind_int_5_LP" ID="{E7BD198A-787B-4107-8599-1BE5A3DF8F06}" Platform="Linked"/>
-							</ActiveSourceList>
-						</Sound>
-					</ChildrenList>
 				</BlendContainer>
 				<BlendContainer Name="footsteps_outdoor" ID="{BB50CA20-120D-4560-B379-FB5F5BA621E6}" ShortID="386349235">
 					<PropertyList>
@@ -1455,6 +1642,48 @@
 						</Sound>
 					</ChildrenList>
 				</RandomSequenceContainer>
+				<Sound Name="fuel_pickup" ID="{FCC380F6-D14C-4FA1-9F6B-088241F969D1}" ShortID="688697943">
+					<PropertyList>
+						<Property Name="Pitch" Type="int32">
+							<ModifierList>
+								<ModifierInfo>
+									<Modifier Name="" ID="{EECBDD47-8047-4632-BDCF-4392ADDC8A19}">
+										<PropertyList>
+											<Property Name="Enabled" Type="bool" Value="True"/>
+											<Property Name="Max" Type="Real64" Value="126"/>
+											<Property Name="Min" Type="Real64" Value="-152"/>
+										</PropertyList>
+									</Modifier>
+								</ModifierInfo>
+							</ModifierList>
+						</Property>
+						<Property Name="Volume" Type="Real64">
+							<ValueList>
+								<Value>12</Value>
+							</ValueList>
+						</Property>
+					</PropertyList>
+					<ReferenceList>
+						<Reference Name="Conversion">
+							<ObjectRef Name="Default Conversion Settings" ID="{6D1B890C-9826-4384-BF07-C15223E9FB56}" WorkUnitID="{A2C186A5-F835-4E4C-A7FF-5B4B1C35C037}"/>
+						</Reference>
+						<Reference Name="OutputBus">
+							<ObjectRef Name="Master Audio Bus" ID="{1514A4D8-1DA6-412A-A17E-75CA0C2149F3}" WorkUnitID="{88AD4BCB-C146-4805-AC3E-ADC0624C3496}"/>
+						</Reference>
+					</ReferenceList>
+					<ChildrenList>
+						<AudioFileSource Name="fuel_pickup" ID="{33378088-E6CF-40BF-9DF3-54D51B4E7540}">
+							<Language>SFX</Language>
+							<AudioFile>fuel_pickup.wav</AudioFile>
+							<MediaIDList>
+								<MediaID ID="668639233"/>
+							</MediaIDList>
+						</AudioFileSource>
+					</ChildrenList>
+					<ActiveSourceList>
+						<ActiveSource Name="fuel_pickup" ID="{33378088-E6CF-40BF-9DF3-54D51B4E7540}" Platform="Linked"/>
+					</ActiveSourceList>
+				</Sound>
 			</ChildrenList>
 		</WorkUnit>
 	</AudioObjects>

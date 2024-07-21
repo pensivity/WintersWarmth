@@ -3,11 +3,12 @@
 	<States>
 		<WorkUnit Name="Default Work Unit" ID="{C09EC15F-0FB9-4C43-B987-33807AE19FE9}" PersistMode="Standalone">
 			<ChildrenList>
-				<StateGroup Name="New_State_Group" ID="{1E9195F5-BF51-42DA-8331-5DB0A77EFF62}">
+				<StateGroup Name="Music_State_Group" ID="{1E9195F5-BF51-42DA-8331-5DB0A77EFF62}">
 					<ChildrenList>
 						<State Name="None" ID="{7E56385D-1410-4F51-9103-B9CB51ECB022}"/>
 						<State Name="Indoors" ID="{D7C835C7-9E92-4CCF-8995-11C19BAEAF56}"/>
 						<State Name="Outdoors" ID="{2CFD3E8C-F7D3-4C81-96DA-132EFBFBBADF}"/>
+						<State Name="TitleScreen" ID="{1AA26169-5B7B-4A73-8FB3-A1EA944BD982}"/>
 					</ChildrenList>
 				</StateGroup>
 			</ChildrenList>

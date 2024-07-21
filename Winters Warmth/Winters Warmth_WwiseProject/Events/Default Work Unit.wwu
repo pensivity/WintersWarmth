@@ -16,9 +16,22 @@
 				</Event>
 				<Folder Name="Music" ID="{1243F522-6C9D-4BBE-B3B1-AFD91988BDBC}" ShortID="1021381181">
 					<ChildrenList>
-						<Event Name="Play_Music_Switch_Container" ID="{6F5509A8-9222-48F6-AB63-0E0C70AF737E}">
+						<Event Name="play_music" ID="{6F5509A8-9222-48F6-AB63-0E0C70AF737E}">
 							<ChildrenList>
+								<Action Name="" ID="{43F8D232-4AA5-4640-972B-FAAC4BA1B964}" ShortID="113449473">
+									<PropertyList>
+										<Property Name="ActionType" Type="int16" Value="22"/>
+									</PropertyList>
+									<ReferenceList>
+										<Reference Name="Target">
+											<ObjectRef Name="TitleScreen" ID="{1AA26169-5B7B-4A73-8FB3-A1EA944BD982}" WorkUnitID="{C09EC15F-0FB9-4C43-B987-33807AE19FE9}"/>
+										</Reference>
+									</ReferenceList>
+								</Action>
 								<Action Name="" ID="{4FE2B0B2-0E40-4C10-9277-6A025BAFBFD6}" ShortID="138586809">
+									<PropertyList>
+										<Property Name="Delay" Type="Real64" Value="0.5"/>
+									</PropertyList>
 									<ReferenceList>
 										<Reference Name="Target">
 											<ObjectRef Name="Music Switch Container" ID="{62B71D7C-251E-4C82-9BC9-EFB1E921FDE2}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
@@ -36,6 +49,9 @@
 								<Event Name="Play_generator_run_LP" ID="{D9D8996C-7694-4A51-A752-29628F59DAD7}">
 									<ChildrenList>
 										<Action Name="" ID="{70A1A394-2985-4E64-95A6-16895C8F3D82}" ShortID="578248572">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="3"/>
+											</PropertyList>
 											<ReferenceList>
 												<Reference Name="Target">
 													<ObjectRef Name="generator_run_LP" ID="{01826543-EDE8-4810-A0FB-3BDE96576EC2}" WorkUnitID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}"/>
@@ -156,6 +172,51 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="player_goes_inside" ID="{19778FF1-0C81-4037-998C-873E34C1A8A6}">
+									<ChildrenList>
+										<Action Name="" ID="{47D39ACC-910E-4056-BC7D-DFFB2E80108B}" ShortID="64310519">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Indoors" ID="{D7C835C7-9E92-4CCF-8995-11C19BAEAF56}" WorkUnitID="{C09EC15F-0FB9-4C43-B987-33807AE19FE9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{A1FE5407-318B-4E20-9004-7BE8EAAFA951}" ShortID="1071205047">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="41"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Play_generator_run_LP" ID="{D9D8996C-7694-4A51-A752-29628F59DAD7}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{5E58260C-C1B7-4B4E-9C4B-357147CC64A5}" ShortID="1032328464">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="41"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Set_Voice_Low_pass_Filter_WindBlendContainer" ID="{C8E3BFEE-47E2-40C2-9970-06E2E1A923C6}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{EE66A238-FE1C-4170-A969-8AC424E8AEA5}" ShortID="979927117">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="41"/>
+												<Property Name="Delay" Type="Real64" Value="6"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Stop_WindBlendContainer" ID="{507725D0-5AFF-45DB-BFCB-E891271DD889}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 						<Folder Name="Outdoors" ID="{F5C0E952-6D24-4AC9-B6DE-2B45B0B3A3EA}" ShortID="565771908">
@@ -193,10 +254,111 @@
 										</Action>
 									</ChildrenList>
 								</Event>
+								<Event Name="player_goes_outside" ID="{7CF5DDAF-2688-4F62-88C1-93F997064C37}">
+									<PropertyList>
+										<Property Name="Color" Type="int16" Value="9"/>
+										<Property Name="OverrideColor" Type="bool" Value="True"/>
+									</PropertyList>
+									<ChildrenList>
+										<Action Name="" ID="{4357F656-9B82-4826-93D1-9A63DC126E32}" ShortID="1010817614">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="22"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Outdoors" ID="{2CFD3E8C-F7D3-4C81-96DA-132EFBFBBADF}" WorkUnitID="{C09EC15F-0FB9-4C43-B987-33807AE19FE9}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{ACAB2125-7A06-4978-9C38-22E673CE2286}" ShortID="570250028">
+											<PropertyList>
+												<Property Name="FadeTime" Type="Real64" Value="5.5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WindBlendContainer" ID="{962566CB-37DA-4A44-BCA9-799BA3123BB4}" WorkUnitID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{8296542E-C001-455F-AF19-1708EAD9EDB5}" ShortID="494451494">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="2"/>
+												<Property Name="FadeTime" Type="Real64" Value="5"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="Generator" ID="{4C745E4D-82C5-4137-81EE-7302190BFCA0}" WorkUnitID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+										<Action Name="" ID="{902BC532-4D54-4E66-BE69-AD26FBEC0A41}" ShortID="258628064">
+											<PropertyList>
+												<Property Name="ActionType" Type="int16" Value="27"/>
+											</PropertyList>
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="WindBlendContainer" ID="{962566CB-37DA-4A44-BCA9-799BA3123BB4}" WorkUnitID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
+								<Event Name="play_fuel_pickup" ID="{C16A7C5F-A3E6-4D96-97C6-D1416A7E2C6E}">
+									<ChildrenList>
+										<Action Name="" ID="{98D6CEA6-601C-43BD-A2F8-7924B3C02E4B}" ShortID="898288145">
+											<ReferenceList>
+												<Reference Name="Target">
+													<ObjectRef Name="fuel_pickup" ID="{FCC380F6-D14C-4FA1-9F6B-088241F969D1}" WorkUnitID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}"/>
+												</Reference>
+											</ReferenceList>
+										</Action>
+									</ChildrenList>
+								</Event>
 							</ChildrenList>
 						</Folder>
 					</ChildrenList>
 				</Folder>
+				<Event Name="Play_Music_Switch_Container" ID="{3DC5FDF6-1341-43AB-8C0E-4DCEAC5BDCEE}">
+					<ChildrenList>
+						<Action Name="" ID="{6FDCAF77-0C44-4791-AFB2-4D1BA23EEFA2}" ShortID="794098782">
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="Music Switch Container" ID="{62B71D7C-251E-4C82-9BC9-EFB1E921FDE2}" WorkUnitID="{EFF286A3-755F-4D4F-BB17-FFCBC478E14C}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Stop_WindBlendContainer" ID="{507725D0-5AFF-45DB-BFCB-E891271DD889}">
+					<ChildrenList>
+						<Action Name="" ID="{7F523D32-5AD1-4ADE-8727-B92232406094}" ShortID="501566730">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="2"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindBlendContainer" ID="{962566CB-37DA-4A44-BCA9-799BA3123BB4}" WorkUnitID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
+				<Event Name="Set_Voice_Low_pass_Filter_WindBlendContainer" ID="{C8E3BFEE-47E2-40C2-9970-06E2E1A923C6}">
+					<ChildrenList>
+						<Action Name="" ID="{DD6F09A9-FACA-4097-9B9A-C4D6CE0F5AFB}" ShortID="484019652">
+							<PropertyList>
+								<Property Name="ActionType" Type="int16" Value="26"/>
+								<Property Name="FadeTime" Type="Real64" Value="5"/>
+								<Property Name="Lowpass" Type="int16" Value="100"/>
+							</PropertyList>
+							<ReferenceList>
+								<Reference Name="Target">
+									<ObjectRef Name="WindBlendContainer" ID="{962566CB-37DA-4A44-BCA9-799BA3123BB4}" WorkUnitID="{77A2E20B-EBE9-44FC-AE76-3A34E3C4B206}"/>
+								</Reference>
+							</ReferenceList>
+						</Action>
+					</ChildrenList>
+				</Event>
 			</ChildrenList>
 		</WorkUnit>
 	</Events>

@@ -6,8 +6,12 @@
 				<SoundcasterSession Name="Soundcaster Session" ID="{2F11FBE4-81BA-49F0-8B9C-72CAF95F6CF3}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Music_Switch_Container" ID="{6F5509A8-9222-48F6-AB63-0E0C70AF737E}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<ObjectRef Name="play_music" ID="{6F5509A8-9222-48F6-AB63-0E0C70AF737E}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
 							<Position X="0" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_Music_Switch_Container" ID="{3DC5FDF6-1341-43AB-8C0E-4DCEAC5BDCEE}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="0" Y="2"/>
 						</Module>
 						<Module>
 							<ObjectRef Name="Play_footsteps_indoor" ID="{58C1B3C4-C295-4CC1-9893-984E676962F9}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
@@ -26,6 +30,14 @@
 							<Position X="1" Y="3"/>
 						</Module>
 						<Module>
+							<ObjectRef Name="player_goes_inside" ID="{19778FF1-0C81-4037-998C-873E34C1A8A6}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="2" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="player_goes_outside" ID="{7CF5DDAF-2688-4F62-88C1-93F997064C37}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="2" Y="1"/>
+						</Module>
+						<Module>
 							<ObjectRef Name="Play_generator_run_LP" ID="{D9D8996C-7694-4A51-A752-29628F59DAD7}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
 							<Position X="3" Y="0"/>
 						</Module>
@@ -41,15 +53,19 @@
 							<ObjectRef Name="Play_generator_stop" ID="{2DE989A3-DC3F-43D4-8075-1B2A5E54009C}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
 							<Position X="3" Y="3"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="play_fuel_pickup" ID="{C16A7C5F-A3E6-4D96-97C6-D1416A7E2C6E}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="4" Y="0"/>
+						</Module>
 					</ModuleList>
 					<RTPCValueList ShowAll="true">
 						<RTPCValue>
 							<GameParameterRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}"/>
-							<Value>45</Value>
+							<Value>0</Value>
 						</RTPCValue>
 					</RTPCValueList>
 					<CurrentStateList ShowAll="true">
-						<CurrentStateRef Name="Outdoors" ID="{2CFD3E8C-F7D3-4C81-96DA-132EFBFBBADF}"/>
+						<CurrentStateRef Name="Indoors" ID="{D7C835C7-9E92-4CCF-8995-11C19BAEAF56}"/>
 					</CurrentStateList>
 					<CurrentSwitchList ShowAll="true">
 						<CurrentSwitchRef Name="Outdoor_Intensity_C" ID="{F3D0BDFF-C74B-4C49-A23F-7D193AE6C760}"/>
