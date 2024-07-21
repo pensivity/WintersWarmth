@@ -7,6 +7,7 @@ public class ResourceManager : MonoBehaviour
 
     private bool isCooling;
     private PlayerController player;
+    private GameManager gm;
     private int addedWarmth;
 
     private void Awake()
@@ -14,6 +15,7 @@ public class ResourceManager : MonoBehaviour
         houseWarmth = 100;
         isCooling = false;
         player = GameObject.Find("PlayerController").GetComponent<PlayerController>();
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
         addedWarmth = 20;
     }
 
@@ -22,6 +24,11 @@ public class ResourceManager : MonoBehaviour
     void FixedUpdate()
     {
         StartCoroutine(DecreaseWarmth());
+
+        if (houseWarmth < 0)
+        {
+            gm.hasLost = true;
+        }
     }
 
     IEnumerator DecreaseWarmth ()

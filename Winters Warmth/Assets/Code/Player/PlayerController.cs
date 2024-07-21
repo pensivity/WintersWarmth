@@ -6,21 +6,35 @@ public class PlayerController : MonoBehaviour
     [SerializeField] public float speed;
     [SerializeField] public int carryCapacity;
     [SerializeField] public int maxCapacity;
+    [SerializeField] public int maxPlayerWarmth;
     [SerializeField] public int playerWarmth;
-    [SerializeField] public bool isOutside;
+    [SerializeField] public int coolFactor;
 
+    [SerializeField] private GameManager gm;
+
+    [SerializeField] public bool isOutside;
     private bool isCooling;
+    private bool isWarming;
 
 
     private void Awake()
     {
+        // Set up initial player parameters
         speed = 5f;
         carryCapacity = 0;
         maxCapacity = 5;
-        playerWarmth = 100;
+        maxPlayerWarmth = 100;
+        playerWarmth = maxPlayerWarmth;
+        coolFactor = 5;
+
+        // Find Game Manager
+        gm = GameObject.Find("GameManager").GetComponent<GameManager>();
+
+        // Set up whether the player is inside and warming, or outside and cooling
         isOutside = false;
 
         isCooling = false;
+        isWarming = false;
     }
 
     private void FixedUpdate()
@@ -28,11 +42,16 @@ public class PlayerController : MonoBehaviour
         if (isOutside)
         {
             StartCoroutine(DecreasePlayerWarmth());
-        } else
+        }
+        else
         {
             StartCoroutine(IncreasePlayerWarmth());
         }
-        
+
+        if (playerWarmth < 0)
+        {
+            gm.hasLost = true;
+        }
     }
 
     IEnumerator DecreasePlayerWarmth()
@@ -40,7 +59,7 @@ public class PlayerController : MonoBehaviour
         if (!isCooling)
         {
             isCooling = true;
-            playerWarmth--;
+            playerWarmth -= coolFactor;
             // Add sound effects here!
             yield return new WaitForSeconds(2);
             isCooling = false;
@@ -51,13 +70,13 @@ public class PlayerController : MonoBehaviour
 
     IEnumerator IncreasePlayerWarmth()
     {
-        if (!isCooling)
+        if (!isWarming && playerWarmth < maxPlayerWarmth)
         {
-            isCooling = true;
-            playerWarmth++;
+            isWarming = true;
+            playerWarmth += 10;
             // Add sound effects here!
             yield return new WaitForSeconds(2);
-            isCooling = false;
+            isWarming = false;
             yield return null;
         }
     }

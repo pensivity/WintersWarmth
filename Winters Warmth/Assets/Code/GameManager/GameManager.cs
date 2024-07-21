@@ -2,42 +2,23 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
-    [SerializeField] private string initialConversationID = "Introduction";
+    [SerializeField] public bool hasWon;
+    [SerializeField] public bool hasLost;
 
-    private void Start()
+    private void Awake()
     {
-        StartDialogue(initialConversationID);
-    }
-
-    public void StartDialogue(string conversationID)
-    {
-        ConversationSystemManager.Instance.StartConversation(conversationID);
+        Time.timeScale = 1;
+        hasWon = false;
+        hasLost = false;
     }
 
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (hasLost)
         {
-            ConversationSystemManager.Instance.AdvanceConversation();
+            Time.timeScale = 0;
+            Debug.Log("You lost!");
         }
     }
 
-    public void TriggerEventConversation(string eventType)
-    {
-        switch (eventType)
-        {
-            case "MeetNPC":
-                StartDialogue("SubwayConversation");
-                break;
-            case "FindItem":
-                StartDialogue("ItemDiscovery");
-                break;
-            case "EndGame":
-                StartDialogue("GameConclusion");
-                break;
-            default:
-                Debug.LogWarning($"No conversation defined for event: {eventType}");
-                break;
-        }
-    }
 }
