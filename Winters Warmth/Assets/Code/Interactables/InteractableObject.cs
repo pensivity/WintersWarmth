@@ -23,6 +23,9 @@ public class Interactable : MonoBehaviour
     private Coroutine shakeCoroutine;
     private Vector3 promptStartPosition;
 
+    // Static reference to the currently talking NPC
+    private static Interactable currentlyTalkingNPC;
+
     void Start()
     {
         StartCoroutine(InitializeInteractable());
@@ -57,7 +60,7 @@ public class Interactable : MonoBehaviour
     {
         if (player == null) return;
 
-        if (isInConversation)
+        if (isInConversation && this == currentlyTalkingNPC)
         {
             if (Input.GetKeyDown(advanceConversationKey))
             {
@@ -110,6 +113,7 @@ public class Interactable : MonoBehaviour
                 {
                     ConversationSystemManager.Instance.StartConversation(conversationID);
                     isInConversation = true;
+                    currentlyTalkingNPC = this;
                     HideInteractionPrompt();
                 }
                 break;
@@ -129,9 +133,10 @@ public class Interactable : MonoBehaviour
 
     void OnConversationEnded(string endedConversationID)
     {
-        if (endedConversationID == conversationID)
+        if (isInConversation && this == currentlyTalkingNPC)
         {
             isInConversation = false;
+            currentlyTalkingNPC = null;
             HandlePostConversation();
         }
     }
