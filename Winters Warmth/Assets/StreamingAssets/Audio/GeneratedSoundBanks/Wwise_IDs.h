@@ -13,7 +13,14 @@ namespace AK
 {
     namespace EVENTS
     {
+        static const AkUniqueID NEW__EVENT = 3294112669U;
         static const AkUniqueID PLAY_CHEESE = 2601295681U;
+        static const AkUniqueID PLAY_FOOTSTEPS_OUTDOOR = 1267513578U;
+        static const AkUniqueID PLAY_GENERATOR_RUN_LP = 2602123658U;
+        static const AkUniqueID PLAY_GENERATOR_START = 152489872U;
+        static const AkUniqueID PLAY_GENERATOR_STOP = 1828218492U;
+        static const AkUniqueID PLAY_GENERATOR_UNDER_LOAD_LP = 1665291020U;
+        static const AkUniqueID STOP_FOOTSTEPS_OUTDOOR = 2871225740U;
     } // namespace EVENTS
 
     namespace BANKS

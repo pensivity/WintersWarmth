@@ -6,13 +6,54 @@
 				<SoundcasterSession Name="Soundcaster Session" ID="{2F11FBE4-81BA-49F0-8B9C-72CAF95F6CF3}">
 					<ModuleList>
 						<Module>
-							<ObjectRef Name="Play_Cheese" ID="{79C8E3B9-A6EC-4D2F-B9B2-A883122CF686}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<ObjectRef Name="Play_Music_Switch_Container" ID="{6F5509A8-9222-48F6-AB63-0E0C70AF737E}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
 							<Position X="0" Y="0"/>
 						</Module>
+						<Module>
+							<ObjectRef Name="Play_footsteps_indoor" ID="{58C1B3C4-C295-4CC1-9893-984E676962F9}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="1" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_footsteps_indoor" ID="{14BF14AD-5B23-4FEF-93E7-7C8A181E4E30}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="1" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_footsteps_outdoor" ID="{EF818540-4A24-41A9-83E1-932E8D9F031B}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="1" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Stop_footsteps_outdoor" ID="{FF548E19-EC47-4F1E-A023-0C6251208AF5}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="1" Y="3"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_generator_run_LP" ID="{D9D8996C-7694-4A51-A752-29628F59DAD7}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="3" Y="0"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_generator_start" ID="{21B46077-F0B8-479A-B45E-CFC4E85B19FB}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="3" Y="1"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_generator_under_load_LP" ID="{D9FDA3CB-8AAA-4872-8534-61FCF867775F}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="3" Y="2"/>
+						</Module>
+						<Module>
+							<ObjectRef Name="Play_generator_stop" ID="{2DE989A3-DC3F-43D4-8075-1B2A5E54009C}" WorkUnitID="{8F341C6C-0757-4087-A4E3-5767A9C7C3A8}"/>
+							<Position X="3" Y="3"/>
+						</Module>
 					</ModuleList>
-					<RTPCValueList ShowAll="true"/>
-					<CurrentStateList ShowAll="true"/>
-					<CurrentSwitchList ShowAll="true"/>
+					<RTPCValueList ShowAll="true">
+						<RTPCValue>
+							<GameParameterRef Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}"/>
+							<Value>45</Value>
+						</RTPCValue>
+					</RTPCValueList>
+					<CurrentStateList ShowAll="true">
+						<CurrentStateRef Name="Outdoors" ID="{2CFD3E8C-F7D3-4C81-96DA-132EFBFBBADF}"/>
+					</CurrentStateList>
+					<CurrentSwitchList ShowAll="true">
+						<CurrentSwitchRef Name="Outdoor_Intensity_C" ID="{F3D0BDFF-C74B-4C49-A23F-7D193AE6C760}"/>
+					</CurrentSwitchList>
 				</SoundcasterSession>
 			</ChildrenList>
 		</WorkUnit>

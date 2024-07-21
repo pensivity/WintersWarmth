@@ -1,6 +1,38 @@
 Event	ID	Name			Wwise Object Path	Notes
+	152489872	Play_generator_start			\Default Work Unit\Indoors\Play_generator_start	
+	1267513578	Play_footsteps_outdoor			\Default Work Unit\Play_footsteps_outdoor	
+	1665291020	Play_generator_under_load_LP			\Default Work Unit\Indoors\Play_generator_under_load_LP	
+	1828218492	Play_generator_stop			\Default Work Unit\Indoors\Play_generator_stop	
 	2601295681	Play_Cheese			\Default Work Unit\Play_Cheese	
+	2602123658	Play_generator_run_LP			\Default Work Unit\Indoors\Play_generator_run_LP	
+	2871225740	Stop_footsteps_outdoor			\Default Work Unit\Stop_footsteps_outdoor	
+	3294112669	NEW__EVENT			\Default Work Unit\NEW__EVENT	
 
 In Memory Audio	ID	Name	Audio source file		Wwise Object Path	Notes	Data Size
+	112735020	footstep_grass_13	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_13_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_13		27990
+	253609268	footstep_ice_06	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_ice_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Ice\footstep_ice_06		82828
+	258679977	footstep_grass_14	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_14_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_14		27256
+	265390462	footstep_grass_06	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_06_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_06		27440
+	268843952	generator_start	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\generator_start_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generator\generator_start		705696
+	404503655	footstep_grass_12	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_12_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_12		26058
+	414297123	generator_run_under_load_LP	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\generator_run_under_load_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generator\generator_under_load_LP\generator_run_under_load_LP		1534320
+	430128015	footstep_ice_05	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_ice_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Ice\footstep_ice_05		99424
+	442027170	generator_ramp_up_to_load	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\generator_ramp_up_to_load_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generator\generator_under_load_LP\generator_ramp_up_to_load		692212
+	467472253	footstep_ice_04	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_ice_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Ice\footstep_ice_04		86208
+	468259674	footstep_ice_03	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_ice_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Ice\footstep_ice_03		77964
+	482351703	footstep_grass_07	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_07_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_07		28588
+	529735466	footstep_grass_09	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_09_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_09		26566
+	557747067	footstep_grass_08	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_08_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_08		28634
+	562240293	footstep_grass_04	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_04_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_04		25648
+	607996917	footstep_grass_11	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_11_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_11		28634
+	614188321	generator_run_LP	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\generator_run_LP_FBC78EF0.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generator\generator_run_LP		2469696
+	732997307	footstep_grass_01	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_01		20916
+	748840119	generator_stop	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\generator_stop_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Generator\generator_stop		1275084
+	754261523	footstep_ice_02	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_ice_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Ice\footstep_ice_02		84132
 	755690297	Cheese	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\Cheese_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\Cheese		126908
+	772453184	footstep_grass_10	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_10_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_10		25694
+	829672599	footstep_grass_02	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_02_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_02		26060
+	842111416	footstep_grass_03	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_03_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_03		25234
+	849254034	footstep_ice_01	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_ice_01_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Ice\footstep_ice_01		115820
+	927019699	footstep_grass_05	Y:\Documents\GitHub\WintersWarmth\Winters Warmth\Winters Warmth_WwiseProject\.cache\Mac\SFX\footstep_grass_05_818F3B66.wem		\Actor-Mixer Hierarchy\Default Work Unit\footsteps_outdoor\Grass\footstep_grass_05		27118
 
