@@ -24,7 +24,7 @@ MonoBehaviour:
     ParentPath: Virtual Acoustics/Default Work Unit
     guid: 7dbc617653238d43ab81ae6e7c8f8a6f
     GuidInternal: 
-    m_lastTime: -8584800922515288700
+    m_lastTime: -8584800784766693007
     List: []
   AuxBusWwu:
   - PhysicalPath: Master-Mixer Hierarchy/Default Work Unit.wwu
@@ -38,7 +38,7 @@ MonoBehaviour:
     ParentPath: Master-Mixer Hierarchy/Default Work Unit
     guid: cb4bad8846c10548ac3eadc0624c3496
     GuidInternal: 
-    m_lastTime: -8584800922515315852
+    m_lastTime: -8584800784769425468
     List:
     - name: Master Audio Bus
       guid: d8a41415a61d2a41a17e75ca0c2149f3
@@ -66,7 +66,7 @@ MonoBehaviour:
     ParentPath: SoundBanks/Default Work Unit
     guid: 9e3c3907e3559546a4fc825ab6c80394
     GuidInternal: 
-    m_lastTime: -8584800867454482792
+    m_lastTime: -8584800784766703265
     List:
     - name: Main_SoundBank
       guid: a915179b3dd563489bbb8b20c9373537
@@ -94,7 +94,7 @@ MonoBehaviour:
     ParentPath: Events/Default Work Unit
     guid: 6c1c348f57078740a4e35767a9c7c3a8
     GuidInternal: 
-    m_lastTime: -8584800805166709066
+    m_lastTime: -8584800784770065404
     List:
     - name: Indoors
       guid: a1189696f7cf88459667e7d2643c781a
@@ -168,8 +168,8 @@ MonoBehaviour:
         guid: b9e3c879eca62f4db9b2a883122cf686
       Path: Events/Default Work Unit/Play_Cheese
       maxAttenuation: 0
-      maxDuration: 0.7188889
-      minDuration: 0.7188889
+      maxDuration: -1
+      minDuration: -1
     - name: Play_footsteps_indoor
       guid: c4b3c15895c2c14c9893984e676962f9
       id: 2885024351
@@ -260,8 +260,8 @@ MonoBehaviour:
         guid: 7760b421b8f09a47b45ecfc4e85b19fb
       Path: Events/Default Work Unit/SX/Indoors/Play_generator_start
       maxAttenuation: 0
-      maxDuration: 4
-      minDuration: 4
+      maxDuration: -1
+      minDuration: -1
     - name: Play_generator_stop
       guid: a389e92d3fdcd44380751b2a5e54009c
       id: 1828218492
@@ -283,8 +283,8 @@ MonoBehaviour:
         guid: a389e92d3fdcd44380751b2a5e54009c
       Path: Events/Default Work Unit/SX/Indoors/Play_generator_stop
       maxAttenuation: 0
-      maxDuration: 7.2278233
-      minDuration: 7.2278233
+      maxDuration: -1
+      minDuration: -1
     - name: Play_generator_under_load_LP
       guid: cba3fdd9aa8a7248853461fcf867775f
       id: 1665291020
@@ -372,8 +372,8 @@ MonoBehaviour:
         guid: 198e54ff47ec1e4fa0230c6251208af5
       Path: Events/Default Work Unit/SX/Outdoors/Stop_footsteps_outdoor
       maxAttenuation: 0
-      maxDuration: 0
-      minDuration: 0
+      maxDuration: -1
+      minDuration: -1
     - name: SX
       guid: f0e17341040cf14cb100339a24dc1162
       id: 1584861564
@@ -403,7 +403,7 @@ MonoBehaviour:
     ParentPath: Game Parameters/Default Work Unit
     guid: 8606f81533dee343bcb4f3cf7189efe2
     GuidInternal: 
-    m_lastTime: -8584800840914980204
+    m_lastTime: -8584800784770044736
     List:
     - name: playerWarmth
       guid: 7ad4735f00fc0a419ac2ab952c0934b9
@@ -431,7 +431,7 @@ MonoBehaviour:
     ParentPath: States/Default Work Unit
     guid: 5fc19ec0b90f434cb98733807ae19fe9
     GuidInternal: 
-    m_lastTime: -8584800831217534198
+    m_lastTime: -8584800784766698311
     List:
     - name: New_State_Group
       guid: f595911e51bfda4283315db0a77eff62
@@ -511,7 +511,7 @@ MonoBehaviour:
     ParentPath: Switches/Default Work Unit
     guid: 84ea1d64bc8d6f4db14a40487cb98712
     GuidInternal: 
-    m_lastTime: -8584800829134615800
+    m_lastTime: -8584800784766695817
     List:
     - name: Music_Switch_Group
       guid: b680ae793682cb4ab02fecee2c9a19b1
@@ -591,7 +591,7 @@ MonoBehaviour:
     ParentPath: Triggers/Default Work Unit
     guid: 1509f358dc488d41b9994c1053818e08
     GuidInternal: 
-    m_lastTime: -8584800922515290257
+    m_lastTime: -8584800784766694432
     List: []
   ExpandedFileSystemItemIds: 0200000003000000040000000500000006000000070000000a0000000b000000
   ExpandedWaapiItemIds: 02000000030000000500000006000000070000000a0000000b000000
