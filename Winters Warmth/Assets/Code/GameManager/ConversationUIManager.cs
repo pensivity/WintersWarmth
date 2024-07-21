@@ -97,4 +97,10 @@ public class ConversationUIManager : MonoBehaviour
             DisplayNextLine();
         }
     }
+
+    public List<DialogueLine> GetCurrentConversation()
+    {
+        return conversation;
+    }
+
 }

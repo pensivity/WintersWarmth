@@ -6,29 +6,68 @@ public class Interactable : MonoBehaviour
     public float interactionRadius = 2f;
     public GameObject interactionPromptPrefab;
     public KeyCode interactionKey = KeyCode.E;
+    public KeyCode advanceConversationKey = KeyCode.Space;
     public float appearanceHeight = 0.5f;
     public float animationDuration = 0.5f;
 
-    // Other scripts
-    private Transform player;
-    private PlayerController playerController;
-    private MenuManager menus;
-
+    [SerializeField] private Transform player;
+    [SerializeField] private PlayerController playerController;
+    [SerializeField] private string conversationID;
+    [SerializeField] private Vector3 newPosition;
+    [SerializeField] private bool shouldTeleport = false;
+    [SerializeField] private bool shouldDelete = false;
 
     private bool canInteract = false;
+    private bool isInConversation = false;
     private GameObject instantiatedPrompt;
     private Coroutine shakeCoroutine;
     private Vector3 promptStartPosition;
 
-    void Awake()
+    // Static reference to the currently talking NPC
+    private static Interactable currentlyTalkingNPC;
+
+    void Start()
     {
-        player = GameObject.FindGameObjectWithTag("Player").transform;
-        playerController = GameObject.Find("PlayerController").GetComponent<PlayerController>();
+        StartCoroutine(InitializeInteractable());
+    }
+
+    private IEnumerator InitializeInteractable()
+    {
+        while (player == null || playerController == null)
+        {
+            player = GameObject.FindGameObjectWithTag("Player")?.transform;
+            playerController = GameObject.Find("PlayerController")?.GetComponent<PlayerController>();
+            yield return null;
+        }
+
+        while (ConversationSystemManager.Instance == null)
+        {
+            yield return null;
+        }
+
+        ConversationSystemManager.Instance.OnConversationEnded += OnConversationEnded;
+    }
+
+    void OnDestroy()
+    {
+        if (ConversationSystemManager.Instance != null)
+        {
+            ConversationSystemManager.Instance.OnConversationEnded -= OnConversationEnded;
+        }
     }
 
     void Update()
     {
-        if (Vector2.Distance(transform.position, player.position) <= interactionRadius)
+        if (player == null) return;
+
+        if (isInConversation && this == currentlyTalkingNPC)
+        {
+            if (Input.GetKeyDown(advanceConversationKey))
+            {
+                AdvanceConversation();
+            }
+        }
+        else if (Vector2.Distance(transform.position, player.position) <= interactionRadius)
         {
             if (!canInteract)
             {
@@ -45,6 +84,73 @@ public class Interactable : MonoBehaviour
         {
             canInteract = false;
             HideInteractionPrompt();
+        }
+    }
+
+    void Interact()
+    {
+        switch (gameObject.tag)
+        {
+            case "Fuel":
+                if (playerController != null && playerController.carryCapacity < playerController.maxCapacity)
+                {
+                    playerController.carryCapacity++;
+                    SafeDestroyPrompt();
+                    if (shouldDelete)
+                    {
+                        Destroy(gameObject);
+                    }
+                }
+                else
+                {
+                    Debug.Log("Carrying too much!");
+                    // TODO: Implement UI popup
+                }
+                break;
+            case "NPC":
+                Debug.Log("Interacting with NPC");
+                if (ConversationSystemManager.Instance != null)
+                {
+                    ConversationSystemManager.Instance.StartConversation(conversationID);
+                    isInConversation = true;
+                    currentlyTalkingNPC = this;
+                    HideInteractionPrompt();
+                }
+                break;
+            default:
+                Debug.Log("Interacting with " + gameObject.name);
+                break;
+        }
+    }
+
+    void AdvanceConversation()
+    {
+        if (ConversationSystemManager.Instance != null)
+        {
+            ConversationSystemManager.Instance.AdvanceConversation();
+        }
+    }
+
+    void OnConversationEnded(string endedConversationID)
+    {
+        if (isInConversation && this == currentlyTalkingNPC)
+        {
+            isInConversation = false;
+            currentlyTalkingNPC = null;
+            HandlePostConversation();
+        }
+    }
+
+    void HandlePostConversation()
+    {
+        if (shouldTeleport)
+        {
+            transform.position = newPosition;
+        }
+
+        if (shouldDelete)
+        {
+            Destroy(gameObject);
         }
     }
 
@@ -65,34 +171,6 @@ public class Interactable : MonoBehaviour
         if (instantiatedPrompt != null)
         {
             StartCoroutine(DisappearAnimation(instantiatedPrompt.transform));
-        }
-    }
-
-    void Interact()
-    {
-        switch(gameObject.tag)
-        {
-            case "Fuel":
-                if (playerController.carryCapacity < playerController.maxCapacity)
-                {
-                    // add to the player's carried fuel
-                    playerController.carryCapacity++;
-                    menus.RefreshHUD();
-
-                    // destroy this object
-                    SafeDestroyPrompt();
-                    Destroy(gameObject);
-                } else
-                {
-                    Debug.Log("Carrying too much!");
-                    // TODO: Implement UI popup
-                }
-                
-                break;
-
-            default:
-                Debug.Log("Interacting with " + gameObject.name);
-                break;
         }
     }
 
@@ -184,11 +262,6 @@ public class Interactable : MonoBehaviour
             Destroy(instantiatedPrompt);
             instantiatedPrompt = null;
         }
-    }
-
-    void OnDisable()
-    {
-        SafeDestroyPrompt();
     }
 
     void OnDrawGizmosSelected()

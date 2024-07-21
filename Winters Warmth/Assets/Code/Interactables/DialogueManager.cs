@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class DialogueManager : MonoBehaviour
 {
-    [SerializeField] private string initialConversationID = "Introduction";
+    [SerializeField] private string initialConversationID = "";
 
     private void Start()
     {
