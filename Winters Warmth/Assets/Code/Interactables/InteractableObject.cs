@@ -9,8 +9,12 @@ public class Interactable : MonoBehaviour
     public float appearanceHeight = 0.5f;
     public float animationDuration = 0.5f;
 
-    [SerializeField] private Transform player;
-    [SerializeField] private PlayerController playerController;
+    // Other scripts
+    private Transform player;
+    private PlayerController playerController;
+    private MenuManager menus;
+
+
     private bool canInteract = false;
     private GameObject instantiatedPrompt;
     private Coroutine shakeCoroutine;
@@ -73,6 +77,7 @@ public class Interactable : MonoBehaviour
                 {
                     // add to the player's carried fuel
                     playerController.carryCapacity++;
+                    menus.RefreshHUD();
 
                     // destroy this object
                     SafeDestroyPrompt();
