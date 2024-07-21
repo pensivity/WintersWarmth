@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SoundBanksInfo Platform="Windows" BasePlatform="Windows" SchemaVersion="16" SoundBankVersion="150">
+	<RootPaths>
+		<ProjectRoot>../..</ProjectRoot>
+		<SourceFilesRoot>../../.cache/Windows</SourceFilesRoot>
+		<SoundBanksRoot>.</SoundBanksRoot>
+		<ExternalSourcesInputFile></ExternalSourcesInputFile>
+		<ExternalSourcesOutputRoot>.</ExternalSourcesOutputRoot>
+	</RootPaths>
+	<DialogueEvents/>
+	<SoundBanks>
+		<SoundBank Id="1355168291" Type="User" Language="SFX" Hash="{B6CBD692-12EC-CDBA-0932-48F63C40C91F}">
+			<ShortName>Init</ShortName>
+			<Path>Init.bnk</Path>
+			<Plugins>
+				<AudioDevices>
+					<Plugin Id="2317455096" Name="No_Output" LibName="No Output" LibId="11862023"/>
+					<Plugin Id="3859886410" Name="System" LibName="System" LibId="11403271"/>
+				</AudioDevices>
+			</Plugins>
+			<Busses>
+				<Bus Id="3803692087" Name="Master Audio Bus"/>
+			</Busses>
+		</SoundBank>
+		<SoundBank Id="2228651116" Type="User" Language="SFX" Hash="{819EA907-4B0C-2979-651F-3C241AF7024E}">
+			<ShortName>Main_SoundBank</ShortName>
+			<Path>Main_SoundBank.bnk</Path>
+			<Media>
+				<File Id="112735020" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_13.wav</ShortName>
+					<CachePath>SFX/footstep_grass_13_818F3B66.wem</CachePath>
+				</File>
+				<File Id="253609268" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_ice_06.wav</ShortName>
+					<CachePath>SFX/footstep_ice_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="258679977" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_14.wav</ShortName>
+					<CachePath>SFX/footstep_grass_14_818F3B66.wem</CachePath>
+				</File>
+				<File Id="265390462" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_06.wav</ShortName>
+					<CachePath>SFX/footstep_grass_06_818F3B66.wem</CachePath>
+				</File>
+				<File Id="268843952" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>generator_start.wav</ShortName>
+					<CachePath>SFX/generator_start_818F3B66.wem</CachePath>
+				</File>
+				<File Id="404503655" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_12.wav</ShortName>
+					<CachePath>SFX/footstep_grass_12_818F3B66.wem</CachePath>
+				</File>
+				<File Id="414297123" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>generator_run_under_load.wav</ShortName>
+					<CachePath>SFX/generator_run_under_load_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="430128015" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_ice_05.wav</ShortName>
+					<CachePath>SFX/footstep_ice_05_818F3B66.wem</CachePath>
+				</File>
+				<File Id="442027170" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>generator_ramp_up_to_load.wav</ShortName>
+					<CachePath>SFX/generator_ramp_up_to_load_818F3B66.wem</CachePath>
+				</File>
+				<File Id="467472253" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_ice_04.wav</ShortName>
+					<CachePath>SFX/footstep_ice_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="468259674" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_ice_03.wav</ShortName>
+					<CachePath>SFX/footstep_ice_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="482351703" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_07.wav</ShortName>
+					<CachePath>SFX/footstep_grass_07_818F3B66.wem</CachePath>
+				</File>
+				<File Id="529735466" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_09.wav</ShortName>
+					<CachePath>SFX/footstep_grass_09_818F3B66.wem</CachePath>
+				</File>
+				<File Id="557747067" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_08.wav</ShortName>
+					<CachePath>SFX/footstep_grass_08_818F3B66.wem</CachePath>
+				</File>
+				<File Id="562240293" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_04.wav</ShortName>
+					<CachePath>SFX/footstep_grass_04_818F3B66.wem</CachePath>
+				</File>
+				<File Id="607996917" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_11.wav</ShortName>
+					<CachePath>SFX/footstep_grass_11_818F3B66.wem</CachePath>
+				</File>
+				<File Id="614188321" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>generator_run_LP.wav</ShortName>
+					<CachePath>SFX/generator_run_LP_FBC78EF0.wem</CachePath>
+				</File>
+				<File Id="732997307" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_01.wav</ShortName>
+					<CachePath>SFX/footstep_grass_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="748840119" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>generator_stop.wav</ShortName>
+					<CachePath>SFX/generator_stop_818F3B66.wem</CachePath>
+				</File>
+				<File Id="754261523" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_ice_02.wav</ShortName>
+					<CachePath>SFX/footstep_ice_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="755690297" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>Cheese.wav</ShortName>
+					<CachePath>SFX/Cheese_818F3B66.wem</CachePath>
+				</File>
+				<File Id="772453184" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_10.wav</ShortName>
+					<CachePath>SFX/footstep_grass_10_818F3B66.wem</CachePath>
+				</File>
+				<File Id="829672599" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_02.wav</ShortName>
+					<CachePath>SFX/footstep_grass_02_818F3B66.wem</CachePath>
+				</File>
+				<File Id="842111416" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_03.wav</ShortName>
+					<CachePath>SFX/footstep_grass_03_818F3B66.wem</CachePath>
+				</File>
+				<File Id="849254034" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_ice_01.wav</ShortName>
+					<CachePath>SFX/footstep_ice_01_818F3B66.wem</CachePath>
+				</File>
+				<File Id="927019699" Language="SFX" Streaming="false" Location="Memory">
+					<ShortName>footstep_grass_05.wav</ShortName>
+					<CachePath>SFX/footstep_grass_05_818F3B66.wem</CachePath>
+				</File>
+			</Media>
+			<Events>
+				<Event Id="3294112669" Name="NEW__EVENT" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+				<Event Id="2601295681" Name="Play_Cheese" DurationType="OneShot" DurationMin="0.7188889" DurationMax="0.7188889">
+					<MediaRefs>
+						<MediaRef Id="755690297"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1267513578" Name="Play_footsteps_outdoor" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="112735020"/>
+						<MediaRef Id="253609268"/>
+						<MediaRef Id="258679977"/>
+						<MediaRef Id="265390462"/>
+						<MediaRef Id="404503655"/>
+						<MediaRef Id="430128015"/>
+						<MediaRef Id="467472253"/>
+						<MediaRef Id="468259674"/>
+						<MediaRef Id="482351703"/>
+						<MediaRef Id="529735466"/>
+						<MediaRef Id="557747067"/>
+						<MediaRef Id="562240293"/>
+						<MediaRef Id="607996917"/>
+						<MediaRef Id="732997307"/>
+						<MediaRef Id="754261523"/>
+						<MediaRef Id="772453184"/>
+						<MediaRef Id="829672599"/>
+						<MediaRef Id="842111416"/>
+						<MediaRef Id="849254034"/>
+						<MediaRef Id="927019699"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2602123658" Name="Play_generator_run_LP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="614188321"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="152489872" Name="Play_generator_start" DurationType="OneShot" DurationMin="4" DurationMax="4">
+					<MediaRefs>
+						<MediaRef Id="268843952"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1828218492" Name="Play_generator_stop" DurationType="OneShot" DurationMin="7.2278233" DurationMax="7.2278233">
+					<MediaRefs>
+						<MediaRef Id="748840119"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="1665291020" Name="Play_generator_under_load_LP" DurationType="Infinite">
+					<MediaRefs>
+						<MediaRef Id="414297123"/>
+						<MediaRef Id="442027170"/>
+					</MediaRefs>
+				</Event>
+				<Event Id="2871225740" Name="Stop_footsteps_outdoor" MaxAttenuation="0" DurationType="OneShot" DurationMin="0" DurationMax="0"/>
+			</Events>
+		</SoundBank>
+	</SoundBanks>
+	<FileHash>{B6B7D6CF-DA02-DB80-D088-B42891856DC1}</FileHash>
+</SoundBanksInfo>
