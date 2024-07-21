@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WwiseDocument Type="WorkUnit" ID="{15F80686-DE33-43E3-BCB4-F3CF7189EFE2}" SchemaVersion="119">
+	<GameParameters>
+		<WorkUnit Name="Default Work Unit" ID="{15F80686-DE33-43E3-BCB4-F3CF7189EFE2}" PersistMode="Standalone">
+			<ChildrenList>
+				<GameParameter Name="playerWarmth" ID="{5F73D47A-FC00-410A-9AC2-AB952C0934B9}"/>
+			</ChildrenList>
+		</WorkUnit>
+	</GameParameters>
+</WwiseDocument>
