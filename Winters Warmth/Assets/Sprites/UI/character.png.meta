@@ -1,10 +1,13 @@
 fileFormatVersion: 2
-guid: 010d365ceb188064191a470bcdb63f1d
+guid: d3d7b739072a81d4c9dd69e985028bff
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -2413806693520163455
-    second: Circle_0
+      213: -1100630957127726708
+    second: Untitled3419_20240720163519_0
+  - first:
+      213: -3819934030007072510
+    second: Untitled3419_20240720163519_1
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -51,7 +54,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 188
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -109,27 +112,62 @@ TextureImporter:
     ignorePlatformSupport: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WindowsStoreApps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Circle_0
+      name: character_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 0
-        width: 128
-        height: 128
+        x: 87
+        y: 70
+        width: 157
+        height: 476
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 18d3544e99f608ed0800000000000000
-      internalID: -2413806693520163455
+      spriteID: 0a7f0c5f6e31730408c7fe1d1025aeb3
+      internalID: 527277367
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: character_1
+      rect:
+        serializedVersion: 2
+        x: 350
+        y: 113
+        width: 144
+        height: 440
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c969984049b0fe943b246f39a677cc9f
+      internalID: 438121029
       vertices: []
       indices: 
       edges: []
@@ -138,7 +176,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 25548cd6e5e2d984abfa09d6d9964545
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +186,8 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      Circle_0: -2413806693520163455
+      character_0: 527277367
+      character_1: 438121029
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
